@@ -8,11 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-to-left': 'linear-gradient(to left, #4b6cb7, #182848)',
+      },
+      backgroundClip: {
+        text: 'text',
+      },
+      textFillColor: {
+        transparent: 'transparent',
+      },
       colors: {
         background: "var(--background)",  // CSS variables
         foreground: "var(--foreground)",  // CSS variables
         customRed: "#FFBBBB",
-        customTeal: '#004D80'
+        customTeal: '#004D80',
+        customGreen: '#A9F1DF',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
@@ -20,6 +30,9 @@ const config: Config = {
         saira: ['"Saira Condensed"', 'sans-serif'], 
         opensans: ['"Open Sans"', 'sans-serif'],
         alegreya: ['Alegreya', 'serif'],
+        inter :['Inter', 'sans-serif'],
+        roboto : ['Roboto', 'sans-serif'],
+
       },
       height: {
         88 : '22rem',
