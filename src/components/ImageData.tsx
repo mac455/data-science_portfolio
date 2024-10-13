@@ -127,6 +127,7 @@ export const melb_data = [
         src: melb_hist,
         alt: "Histogram",
     },
+];
 
 
-    ];
+
