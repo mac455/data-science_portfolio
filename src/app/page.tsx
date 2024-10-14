@@ -3,7 +3,6 @@ import { wisdmData, wisdmML, naturalEarth, melb_data } from '@/components/ImageD
 import Image from 'next/image';
 import folio_pic_2 from '../app/assets/images/folio_pic_2.webp';
 import ImageGallery from '@/components/ImageGallery';
-import { FaPhone, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import './globals.css';
 import Link from 'next/link';
 import Gym_site_ss from '../app/assets/images/Gym_site_ss.png'

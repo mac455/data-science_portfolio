@@ -2,31 +2,24 @@
 import React, { useState } from 'react';
 import ImageOpacityOpenClick from '@/components/OpenClick';
 import ModalSlider from '@/components/ModalSlider';
-import { subject_1600, subject_1601, boxplot } from '@/components/WisdmImgData'; // Array for subject_1600 images
+import { subject_1600, subject_1601, gyroscope_1600, gyroscope_1601, boxplot_accel, boxplot_gyro, activities_LC_Imgitem, clusterBeforePCA, clusterAfterPCA} from '@/components/WisdmImgData'; // Array for subject_1600 images
 import BackButton from '@/components/BackButton';
+import { ModalSliderImgItem } from '@/components/ModalSlider';
+import ModalHandler from '@/components/ModalHandler';
+import ImageOpacityWithModal from '@/components/ImageOpacity';
 
 const Wisdm = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false); // Manage modal state
-    const [currentImageIndex, setCurrentImageIndex] = useState(0); // Track the clicked image
-
-    const openModal = (index: number) => {
-        setCurrentImageIndex(index); // Set the current image index
-        setIsModalOpen(true); // Open the modal
-    };
-
-    const handleCloseModal = () => {
-        setIsModalOpen(false); // Close the modal
-    };
-
     return (
         <div>
             {/* Heading */}
             <div className="py-10 mt-20">
                 <div className="md:flex items-center justify-center gap-20">
+
                     <div className="cursor-pointer transition-opacity duration-300 hover:opacity-25">
                         <BackButton />
                     </div>
-                    <div className="md:ml-10 flex flex-col w-full md:w-2/3 mx-auto px-4 md:px-0">
+                    <div className="md:ml-10 flex flex-col w-full md:w-2/3  mx-auto px-4 md:px-0">
+                    <hr className="bg-indigo-500 h-1 rounded-full mb-4 mx-auto w-full" />
                         <h1 className="inline-block text-3xl md:text-5xl text-center font-bold text-gray-900 tracking-tight p-4">
                             WISDM Dataset: Data Analysis and Visualisation
                         </h1>
@@ -42,9 +35,9 @@ const Wisdm = () => {
                             Project Overview
                         </h1>
                         <p className="text-lg md:text-xl font-alegreya text-gray-700 leading-relaxed mb-6 px-4">
-                            The project explores the WISDM dataset and uses machine learning classifiers to implement activity prediction. 
-                            Exploratory data analysis (EDA) is used to uncover patterns in human behavior, utilizing Python libraries like Pandas, Matplotlib, Sklearn, Plotly, and Seaborn. 
-                            Visualizations include line charts, histograms, and box plots.
+                        This project explores the WISDM dataset to implement activity prediction using machine learning classifiers. 
+                        Through exploratory data analysis (EDA), patterns in human behavior are uncovered, leveraging Python libraries such as Pandas, Matplotlib, Scikit-learn, Plotly, and Seaborn. 
+                        By comparing accelerometer and gyroscope data, a more comprehensive understanding of individual motion is achieved, enhancing behavioral analysis.
                         </p>
                     </div>
 
@@ -63,57 +56,76 @@ const Wisdm = () => {
 
             {/* Results & Discussion */}
             <h1 className="text-2xl md:text-3xl text-center font-bold text-gray-900 tracking-tight p-8">Results & Discussion</h1>
-            <p className="text-base md:text-xl text-center font-alegreya text-gray-700 leading-relaxed mb-6 px-4">Click on any picture for in-depth analysis</p>
+            <p className="text-base md:text-xl text-center font-alegreya text-gray-700 leading-relaxed mb-6 px-4">Click on any picture for further analysis</p>
 
             <div className='flex justify-center gap-10'>
-                {/* Subject 1600 - Linechart */}
+                {/* Subject 1600 - Accel - Linechart*/}
                 <div className='flex-col'>
-                    <h3 className="text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4">X, Y, Z Accelerometer data for subject 1600</h3>
-                    <div className='flex flex-wrap justify-center gap-10'>
-                        <ImageOpacityOpenClick image={subject_1600[0]} onClick={() => openModal(0)} />
-                    </div>
-                    {/* Modal for image slider */}
-                    {isModalOpen && (
-                        <ModalSlider
-                            imagesArray={subject_1600}
-                            currentSlideIndex={currentImageIndex} // Start from the clicked image
-                            onClose={handleCloseModal}
-                        />
-                    )}
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4">Accelerometer data for subject 1600</h3>
+                    <ModalHandler imagesArray={subject_1600} imageIndex={0} />
                 </div>
     
-                {/* Subject 1601 - Linechart */}
+                {/* Subject 1601 - Accel */}
                 <div className='flex-col'>
-                    <h3 className="text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4">X, Y, Z Accelerometer data for subject 1601</h3>
-                    <div className='flex flex-wrap justify-center gap-10'>
-                        <ImageOpacityOpenClick image={subject_1601[0]} onClick={() => openModal(0)} />
-                    </div>
-                    {/* Modal for image slider */}
-                    {isModalOpen && (
-                        <ModalSlider
-                            imagesArray={subject_1601}
-                            currentSlideIndex={currentImageIndex} // Start from the clicked image
-                            onClose={handleCloseModal}
-                        />
-                    )}
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4">Accelerometer data for subject 1601</h3>
+                    <ModalHandler imagesArray={subject_1601} imageIndex={0} />
                 </div>
             </div>
-            <div>
-                {/* Subject 1601 - Boxplot */}
+
+            <div className='flex justify-center gap-10'>
+                {/* Subject 1600 - Gyro - Linechart */}
                 <div className='flex-col'>
-                    <h3 className="text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> S1600 and S1600 Activity Boxplots</h3>
-                    <div className='flex flex-wrap justify-center gap-10'>
-                        <ImageOpacityOpenClick image={boxplot[0]} onClick={() => openModal(0)} />
-                    </div>
-                    {/* Modal for image slider */}
-                    {isModalOpen && (
-                        <ModalSlider
-                            imagesArray={boxplot}
-                            currentSlideIndex={currentImageIndex} // Start from the clicked image
-                            onClose={handleCloseModal}
-                        />
-                    )}
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4">  Gyroscope data for subject 1600</h3>
+                    <ModalHandler imagesArray={gyroscope_1600} imageIndex={0} />
                 </div>
+                 {/* Subject 1601 - Gyro */}
+                 <div className='flex-col'>
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4">  Gyroscope data for subject 1600</h3>
+                    <ModalHandler imagesArray={gyroscope_1601} imageIndex={0} />
+                </div>
+            </div>
+            <div className='flex justify-center gap-10'>
+                {/* Boxplot - Accel  */}
+                <div className='flex-col'>
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> S1600 and S1600 Accelerometer Boxplots</h3>
+                    <ModalHandler imagesArray={boxplot_accel} imageIndex={0} />
+                </div>
+                
+                {/* Boxplot - Gyro */}
+                <div className='flex-col'>
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> S1600 and S1600 Accelerometer Boxplots</h3>
+                    <ModalHandler imagesArray={boxplot_gyro} imageIndex={0} />
+                </div>
+            </div>
+            <div className='flex justify-center gap-10'>
+                 {/* Activity Freq. Linechart*/}
+                <div className='flex flex-col'>
+                     <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> Activity Count by Time of day for all 51 Subjects</h3>
+                     <ImageOpacityWithModal images={activities_LC_Imgitem} />
+                </div>
+            </div>
+
+            {/* Machine Learning Section */}
+            <div className=" mt-20 gap-10 flex flex-col w-full mx-auto my-auto px-4 md:px-0">
+            <hr className="bg-indigo-500 h-1 rounded-full mb-4 mx-auto w-full" />
+                        <h1 className="inline-block text-3xl md:text-5xl text-center font-bold text-gray-900 tracking-tight p-4">
+                            Machine Learning Section
+                        </h1>
+                        <hr className="bg-indigo-500 h-1 rounded-full mb-4 mx-auto w-full" />
+            </div>
+
+            <div className='flex justify-center gap-10'>
+                 {/* Cluster Scatter Plot   */}
+                 <div className='flex-col'>
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> Activity clustering before PCA</h3>
+                    <ModalHandler imagesArray={clusterBeforePCA} imageIndex={0} />
+                </div>
+                 {/* Cluster Scatter Plot   */}
+                 <div className='flex-col'>
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> Activity clustering after PCA</h3>
+                    <ModalHandler imagesArray={clusterAfterPCA} imageIndex={0} />
+                </div>
+
             </div>
         </div>
     );

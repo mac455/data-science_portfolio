@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Image, {StaticImageData} from 'next/image';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 
-interface ModalSliderImgItem {
+export interface ModalSliderImgItem {
     src: StaticImageData;
     text: string;
     alt: string;

@@ -12,7 +12,7 @@ import Wisdm_1601_z from '../app/assets/images/Wisdm_1601_z.png';
 import Wisdm_linechart from '../app/assets/images/Wisdm_linechart.png';
 import Wisdm_boxplot from '../app/assets/images/Wisdm_boxplot.png';
 import ROC from '../app/assets/images/ROC.png';
-import classifier_report from '../app/assets/images/classifier_report.png';
+import report_no_smote from '../app/assets/images/report_no_smote.png';
 import clustering from '../app/assets/images/clustering.png';
 import pca from '../app/assets/images/pca.png';
 import melb_scatter from '../app/assets/images/melb_scatter.png';
@@ -91,7 +91,7 @@ export const naturalEarth = [
   export const wisdmML = [
     {
       title: "RandomForest Classifier for activity prediction",
-      src: classifier_report, // This should be your actual image import or path
+      src: report_no_smote, // This should be your actual image import or path
       alt: "RandomForest Classifier report for activity prediction",
     },
     {
