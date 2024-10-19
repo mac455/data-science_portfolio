@@ -1,7 +1,7 @@
 import Ex_3_pic_3 from '../app/assets/images/Ex_3_pic_3.png'
 import Ex_3_pic_4 from '../app/assets/images/Ex_3_pic_4.png'
 import { ModalSliderImgItem } from './ModalSlider'
-import references from '../app/assets/images/references.jpg'
+
 
 export const GDP: ModalSliderImgItem[] = [
     {
