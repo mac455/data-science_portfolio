@@ -40,7 +40,7 @@ const Djia = () => {
             {/* Results & Discussion */}
             <h1 className="text-2xl md:text-3xl text-center font-bold text-gray-900 tracking-tight p-8">Results & Discussion</h1>
             <p className="text-base md:text-xl text-center font-alegreya text-gray-700 leading-relaxed mb-6 px-4">Click on any picture for further analysis</p>
-            <a className="block mx-auto text-base w-1/6  font-alegreya text-gray-700 leading-relaxed mb-6 px-4 underline underline-offset-1 focus:text-purple-500 " 
+            <a className="block mx-auto text-base w-full text-center md:w-1/6  font-alegreya text-gray-700 leading-relaxed mb-6 px-4 underline underline-offset-1 focus:text-purple-500 " 
             href='https://github.com/mac455/djia-data-analysis-visualisation'
             target='_blank'
             rel='noopener noreferrer'
