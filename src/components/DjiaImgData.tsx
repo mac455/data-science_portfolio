@@ -4,6 +4,9 @@ import boxplot from '../app/assets/images/djia/boxplot.png'
 import ViolinPlot from '../app/assets/images/djia/ViolinPlot.png'
 import linechart_months from  '../app/assets/images/djia/linechart_months.png'
 import djia_LOBF from '../app/assets/images/djia/djia_LOBF.png'
+import references from '../app/assets/images/references.jpg'
+
+
 export const DjiaBoxplot: ImageItem [] =[
     {
         text:'Boxplot',
@@ -53,8 +56,8 @@ export const DjiaViolinPlot: ModalSliderImgItem [] =[
         )
     },
     {
-        text:null, 
-        src:null,
+        text:'References', 
+        src:references,
         alt:'References',
         description: (
             <>
@@ -86,8 +89,8 @@ export const DjiaLineChart: ModalSliderImgItem [] =[
         )
     },
     {
-        text:null, 
-        src:null,
+        text:'References', 
+        src:references,
         alt:'References',
         description: (
             <>
