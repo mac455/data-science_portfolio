@@ -20,8 +20,8 @@ export const staticIntScatter:ModalSliderImgItem[] = [
              For instance, the scatter plot clearly shows that properties closer to the city center with multiple rooms tend to be the most expensive, aligning with expectations in urban real estate markets.
              <br/> 
              <br/> 
-             However, as Mahajan and Gokhale (2018) point out, static plots are "author-focused" and provide a limited view of the data, offering only a surface-level understanding of broader market dynamics.
-             For example, while the static scatter plot may show that properties in central suburbs are more expensive, it doesn't allow me to explore why certain outer suburbs might have high-priced outliers, perhaps due to unique local factors like new infrastructure or developments.
+             However, as Mahajan and Gokhale (2018) point out, static plots are &quot;author-focused&quot; and provide a limited view of the data, offering only a surface-level understanding of broader market dynamics.
+             For example, while the static scatter plot may show that properties in central suburbs are more expensive, it doesn&apos;t allow me to explore why certain outer suburbs might have high-priced outliers, perhaps due to unique local factors like new infrastructure or developments.
             </p>
             </>
         )
@@ -57,7 +57,7 @@ export const staticIntScatter:ModalSliderImgItem[] = [
         description: (
             <>
             <p>
-            Mahajan, K.N. and Ajay Gokhale, L. (2018). Comparative Study of Static and Interactive VisualizationApproaches. International Journal on Computer Science and Engineering, 10(3), pp.85–91. doi:https://doi.org/10.21817/ijcse/2018/v10i3/181003016.'
+            Mahajan, K.N. and Ajay Gokhale, L. (2018). Comparative Study of Static and Interactive VisualizationApproaches. International Journal on Computer Science and Engineering, 10(3), pp.85–91. doi:https://doi.org/10.21817/ijcse/2018/v10i3/181003016.
             <br/><br/>
             Nguyen, Q.V., Miller, N., Arness, D., Huang, W., Huang, M.L. and Simoff, S. (2020). Evaluation on interactive visualization data with scatterplots. Visual Informatics, [online] 4(4), pp.1–10. doi:https://doi.org/10.1016/j.visinf.2020.09.004.
             </p>
@@ -93,7 +93,7 @@ export const staticIntBoxplot:ModalSliderImgItem[] = [
             By contrast, interactive box plots allow users to engage directly with the data, providing exact values for medians, quartiles, and outliers on demand.
             For instance, by hovering over data points in an interactive plot, I can access variables like the number of rooms, land size, or year built, factors that may be critical in explaining outliers or price differences.
             <br/><br/>
-            The results from the static box plots suggest that Melbourne's housing market in 2016 was heavily skewed toward high prices.
+            The results from the static box plots suggest that Melbourne&apos;s housing market in 2016 was heavily skewed toward high prices.
              The minimum recorded price of 131k for a house highlights that even the lower end of the market was relatively expensive. 
              Units, though cheaper, still had 50% of prices exceeding 605k, suggesting a high cost of living across property types. 
              The presence of numerous outliers in house prices likely indicates that factors such as location, land size, and the number of rooms significantly influence property prices.<br/>

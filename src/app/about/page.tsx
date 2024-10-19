@@ -8,7 +8,7 @@ const About = () => {
         {/* About Me Section */}
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">About Me</h1>
         <p className="mt-4 text-xl md:text-2xl lg:text-3xl font-alegreya">
-          I'm a 24-year-old data analyst and web developer. I am currently pursuing a Master of Science in Computing at Edge Hill University, where I’ve gained comprehensive skills in Data Analysis. Additionally, I enrolled in a 12-week coding bootcamp with CODE Lancashire, further enhancing my skills in full-stack development with technologies such as React, JavaScript, CSS, Tailwind, Next.js, and Python.
+          I &apos;m a 24-year-old data analyst and web developer. I am currently pursuing a Master of Science in Computing at Edge Hill University, where I’ve gained comprehensive skills in Data Analysis. Additionally, I enrolled in a 12-week coding bootcamp with CODE Lancashire, further enhancing my skills in full-stack development with technologies such as React, JavaScript, CSS, Tailwind, Next.js, and Python.
         </p>
 
         {/* Relevant Skills and Projects Section */}

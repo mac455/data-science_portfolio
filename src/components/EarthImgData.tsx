@@ -10,7 +10,7 @@ export const GDP: ModalSliderImgItem[] = [
         description:(
             <>
                 <p>
-                Gross Domestic Product (GDP) is often used as a broad indicator of a nation's economic output.
+                Gross Domestic Product (GDP) is often used as a broad indicator of a nation&apos;s economic output.
                  The first choropleth map visualizes global GDP, highlighting regions such as China, the United States, and parts of Europe as having the highest GDPs.
                   China, in particular, leads globally due to its large economy and massive population. 
                   The United States and the European Union follow closely behind, reflecting their highly developed economies.
@@ -34,10 +34,10 @@ export const GDP: ModalSliderImgItem[] = [
                 <br/>
                 Regions like North America, Europe, and Oceania rank the highest, indicating higher standards of living and more evenly distributed wealth. 
                 In contrast, Africa and parts of Asia show much lower GDP per capita figures despite some nations in these regions having relatively high total GDPs.
-                For example, China’s GDP per capita is much lower compared to its overall GDP ranking, reflecting its large population. Similarly, Africa's low GDP per capita highlights the widespread poverty within the continent, despite some countries having moderate GDP levels.
+                For example, China&apos;s GDP per capita is much lower compared to its overall GDP ranking, reflecting its large population. Similarly, Africa's low GDP per capita highlights the widespread poverty within the continent, despite some countries having moderate GDP levels.
                 <br/>
                 <br/>
-                While GDP reflects a country's economic power, GDP per capita offers a more accurate measure of the average citizen's welfare. 
+                While GDP reflects a country&apos;s economic power, GDP per capita offers a more accurate measure of the average citizen&apos;s welfare. 
                 When evaluating a nation’s economic standing, both measures should be considered alongside other indicators such as income inequality, employment rates, and access to resources. 
                 This helps avoid misleading conclusions about the true economic wellbeing of its population.
                 </p>

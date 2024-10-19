@@ -16,7 +16,6 @@ import Wisdm_boxplot_1601 from '../app/assets/images/Wisdm/Wisdm_boxplot_1601.pn
 import Wisdm_linechart from '../app/assets/images/Wisdm/Wisdm_linechart.png';
 import Wisdm_boxplot from '../app/assets/images/Wisdm/Wisdm_boxplot.png';
 import roc_no_smote from '../app/assets/images/Wisdm/roc_no_smote.png';
-import roc_smote from '../app/assets/images/roc_smote.png';
 import report_smote from '../app/assets/images/Wisdm/report_smote.png';
 import report_no_smote from '../app/assets/images/Wisdm/report_no_smote.png';
 import clusters_no_pca from '../app/assets/images/Wisdm/clusters_no_pca.png';

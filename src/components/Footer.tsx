@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPhone, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
-export default function () {
+const Footer = () =>{
   return (
     <div className="h-auto bg-black text-white pb-10">
       <h1 className="p-5 text-center font-alegreya font-bold text-5xl">Get in touch</h1>
@@ -49,4 +49,7 @@ export default function () {
       </div>
     </div>
   );
+
 }
+  
+export default Footer

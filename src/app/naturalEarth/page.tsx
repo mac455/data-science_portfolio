@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image';
 import BackButton from '@/components/BackButton';
 import ModalHandler from '@/components/ModalHandler';
-import ImageOpacityWithModal from '@/components/ImageOpacity';
 import Ex_3_pic_1 from '../assets/images/Ex_3_pic_1.png'
 import Ex_3_pic_2 from '../assets/images/Ex_3_pic_2.png'
 import Ex_3_pic_5 from '../assets/images/Ex_3_pic_5.png'

@@ -38,7 +38,7 @@ export const DjiaViolinPlot: ModalSliderImgItem [] =[
             <>
             <p>
             Violin plots are useful in this context as they provide a more detailed visual representation of how stock prices were distributed over time. 
-            Unlike a standard box plot, the violin plot shows where the data is concentrated, offering a clearer picture of the market's behavior during periods of economic distress or growth, which can inform deeper insights into historical economic trends.
+            Unlike a standard box plot, the violin plot shows where the data is concentrated, offering a clearer picture of the market&apos;s behavior during periods of economic distress or growth, which can inform deeper insights into historical economic trends.
 
 
             <br/>
@@ -80,7 +80,7 @@ export const DjiaLineChart: ModalSliderImgItem [] =[
             <br/>
             <br/>
             Following the crash, the chart shows stagnation in stock prices for several years, likely influenced by the global impact of World War II and other conflicts, which hindered economic recovery.
-             However, post-war recovery, industrial growth, and renewed market optimism in the 1950s and 60s likely contributed to the sharp increase in DJIA prices, culminating in another market boom, aligning with Binswanger's (2000) observations on the economic resurgence during that period.
+             However, post-war recovery, industrial growth, and renewed market optimism in the 1950s and 60s likely contributed to the sharp increase in DJIA prices, culminating in another market boom, aligning with Binswanger&apos;s (2000) observations on the economic resurgence during that period.
             </p>
             </>
         )

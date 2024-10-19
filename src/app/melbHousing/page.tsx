@@ -26,7 +26,7 @@ const melb = () => {
                 </h1>
                 <p className=" leading-5 text-lg md:text-xl font-alegreya text-gray-700  mb-6 px-4 " >
                 The Melbourne Housing Snapshot dataset, sourced from Kaggle, provides comprehensive data on houses and apartments in Melbourne, Australia. 
-                Covering the period from January to December 2016, the dataset includes key property features such as type, price, and location, offering insights into Melbourne's housing market during that year.
+                Covering the period from January to December 2016, the dataset includes key property features such as type, price, and location, offering insights into Melbourne&apos;s housing market during that year.
                  <br/>
                  <br/>
                  In this analysis, the dataset is used to identify trends over time and examine how factors like proximity to the city center, regional location, property type, and local government policies impact property values.
