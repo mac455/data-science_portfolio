@@ -23,11 +23,11 @@ export default function Home() {
         </div>
         <div className="flex flex-col text-center w-11/12 md:w-2/4 p-4 md:p-8">
           <h1 className="text-4xl md:text-5xl font-roboto font-bold bg-gradient-to-left from-blue-500 to-indigo-900 bg-clip-text text-transparent">
-            Data Analyst <br/> & <br/>
+            Data Scientist <br/> & <br/>
             Web Developer
           </h1>
           <h2 className='font-alegreya text-lg md:text-2xl font-light mt-4 leading-relaxed'>
-            A passionate data analyst with an MSc in Computing. Seeking dynamic data analysis roles to drive impactful insights and innovation.
+            A passionate data scientist & web developer pursuing an MSc in Computing. Seeking dynamic roles in tech to drive impactful insights and innovation.
           </h2>
           <Link href="/contact">
             <button className="font-inter text-lg md:text-xl mt-4 ml-auto mr-auto px-6 md:px-8 py-4 bg-blue-600 text-white rounded-full transition duration-300 hover:bg-blue-800">
@@ -44,10 +44,10 @@ export default function Home() {
             Welcome! 
           </h2>
           <p className="w-full md:w-4/5 mx-auto text-xl md:text-2xl font-alegreya p-4">
-          Welcome to my portfolio, showcasing a selection of my work in data analysis, visualisation, machine learning, and web development.
+          Welcome to my portfolio, showcasing a selection of my work in data analysis, machine learning, data visualisation, and web development.
           With a background in biotechnology and computing, I leverage analytical skills to uncover valuable insights from datasets.
-          <br/><br/>I also develop user-friendly web applications using React and Next.js, emphasising clean design and functionality. 
-          Below, you’ll find highlights of some of my projects, and I invite you to explore further details on the Projects page.
+          <br/>I also develop user-friendly web applications using React and Next.js, emphasising clean design and functionality. 
+          <br/> Below, you’ll find highlights of some of my projects, and I invite you to explore further details on the Projects page.
 
 
 
