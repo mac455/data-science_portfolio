@@ -25,7 +25,7 @@ export default function Home() {
       <div className="flex justify-between items-center bg-white h-24 fixed top-0 left-0 right-0 z-50 shadow-lg px-4 md:px-8">
         <div>
           <Link href="/">
-            <h1 className= {`${pathname === '/' ? 'text-blue-500' : ''} ml-5 md:ml-20 font-inter font-bold text-3xl hover:text-blue-500`} >Mcanthony Otuonye</h1>
+            <h1 className= 'ml-5 md:ml-20 font-inter font-bold text-3xl hover:text-blue-500' >Mcanthony Otuonye</h1>
           </Link> 
         </div>
         {/* Hamburger Icon for Mobile */}
