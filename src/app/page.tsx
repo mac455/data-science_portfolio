@@ -5,7 +5,7 @@ import folio_pic_2 from '../app/assets/images/folio_pic_2.webp';
 import ImageGallery from '@/components/ImageGallery';
 import './globals.css';
 import Link from 'next/link';
-import Gym_site_ss from '../app/assets/images/Gym_site_ss.png'
+import Gym_site_ss from '../app/assets/images/Gym/Gym_site_ss.png'
 
 export default function Home() {
   return (
@@ -40,13 +40,15 @@ export default function Home() {
       {/* Wrapper Section */}
       <div className="bg-gradient-to-left from-blue-500 to-indigo-900 h-auto flex flex-col justify-center text-white pb-10 md:pb-24">
         <div className="flex flex-col bg-gray-800 justify-center text-center px-4">
-          <h2 className="text-4xl md:text-6xl font-bold mt-10">
-            Highlights 
+          <h2 className="text-4xl md:text-6xl font-bold mt-10 mb-5" >
+            Welcome! 
           </h2>
           <p className="w-full md:w-4/5 mx-auto text-xl md:text-2xl font-alegreya p-4">
-            My work focuses on visualising and analysing datasets using Python to extract meaningful insights. 
-            <br /> Additionally, I've applied my skills in React, Next.js, JavaScript and CSS to develop multiple websites including this one. 
-            <br /> Below are highlights of some of my projects, with further details available on the Portfolio page.
+          Welcome to my portfolio, showcasing a selection of my work in data analysis, visualisation, machine learning, and web development.
+          With a background in biotechnology and computing, I leverage analytical skills to uncover valuable insights from datasets.
+          <br/><br/>I also develop user-friendly web applications using React and Next.js, emphasising clean design and functionality. 
+          Below, you’ll find highlights of some of my projects, and I invite you to explore further details on the Projects page.
+
 
 
           </p>
@@ -57,7 +59,7 @@ export default function Home() {
            <div>
               <h1 className="mt-10 text-4xl md:text-5xl">Wireless Sensor Data Mining (WISDM) <br/> dataset </h1>  
               <p className='w-full md:w-2/5 mx-auto my-auto mt-5'> Assessing individual activity patterns to explore practical applications beyond the fitness industry</p> 
-            <div className='cursor-pointer'> <Link href='/wisdm'> <ImageGallery  images={wisdmData} /></Link></div>
+            <div className='cursor-pointer'><ImageGallery  images={wisdmData} href='/wisdm'/></div>
            </div>
 
           {/* ML Section - WISDM */}
@@ -65,7 +67,7 @@ export default function Home() {
               <div className="flex flex-col justify-center mt-10">
                 <h1 className="text-4xl md:text-5xl"> Machine learning (WISDM dataset) </h1>
                 <p className='w-full md:w-3/5 mx-auto my-auto mt-5'> Grouping activities through clustering and using the clusters to build a classifier for activity prediction. </p> 
-                <div className='cursor-pointer'><Link href='/wisdm'><ImageGallery images={wisdmML} /></Link></div>
+                <div className='cursor-pointer'><ImageGallery images={wisdmML} href='/wisdm'/></div>
               </div>
             </div>
         </div>
@@ -73,14 +75,14 @@ export default function Home() {
         {/* Natural Earth Section */}
         <div className="flex flex-col font-alegreya text-xl md:text-2xl justify-center text-center px-4">
           <h1 className="mt-10 text-4xl md:text-5xl">Natural Earth Dataset</h1>
-          <ImageGallery images={naturalEarth} />
+          <ImageGallery images={naturalEarth} href='/naturalEarth'/>
         </div>
 
         {/* Melbourne Housing Section */}
         <div className="flex flex-col font-alegreya text-xl md:text-2xl justify-center text-center px-4">
           <h1 className="mt-10 text-4xl md:text-5xl">Melbourne Housing Dataset</h1>
           <p className='w-full md:w-3/5 mx-auto my-auto mt-5'>Analysing the Melbourne Housing Market in 2016</p>
-          <ImageGallery images={melb_data} />
+          <ImageGallery images={melb_data} href='/melbHousing' />
         </div>
 
         {/* The Infantry Section */}

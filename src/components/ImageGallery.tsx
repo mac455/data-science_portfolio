@@ -8,15 +8,17 @@ interface ImageItem {
     alt: string; 
 }
 
+
 interface ImageProps {
     images: ImageItem[];
+    href:string
 }
 
-const ImageGallery: React.FC<ImageProps> = ({ images }) => {
+const ImageGallery: React.FC <ImageProps> = ({ images,href }) => {
     return (
         <div className="flex justify-center flex-wrap gap-10">
             {/* Pass the entire images array to the ImageSlider */}
-            <ImageSlider items={images} /> 
+            <ImageSlider items={images} href={href} /> 
         </div>
     );
 };

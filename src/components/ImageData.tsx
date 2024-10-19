@@ -3,21 +3,21 @@ import Ex_3_pic_1 from '../app/assets/images/Ex_3_pic_1.png';
 import Ex_3_pic_2 from '../app/assets/images/Ex_3_pic_2.png';
 import Ex_3_pic_3 from '../app/assets/images/Ex_3_pic_3.png';
 import Ex_3_pic_4 from '../app/assets/images/Ex_3_pic_4.png';
-import wisdm_1600_x from '../app/assets/images/wisdm_1600_x.png';
-import wisdm_1600_y from '../app/assets/images/wisdm_1600_y.png';
-import wisdm_1600_z from '../app/assets/images/wisdm_1600_z.png';
-import Wisdm_1601_x from '../app/assets/images/Wisdm_1601_x.png';
-import Wisdm_1601_y from '../app/assets/images/Wisdm_1601_y.png';
-import Wisdm_1601_z from '../app/assets/images/Wisdm_1601_z.png';
-import Wisdm_linechart from '../app/assets/images/Wisdm_linechart.png';
-import Wisdm_boxplot from '../app/assets/images/Wisdm_boxplot.png';
-import ROC from '../app/assets/images/ROC.png';
-import report_no_smote from '../app/assets/images/report_no_smote.png';
-import clustering from '../app/assets/images/clustering.png';
-import pca from '../app/assets/images/pca.png';
-import melb_scatter from '../app/assets/images/melb_scatter.png';
-import melb_hist from '../app/assets/images/melb_hist.png';
-import melb_boxplot from '../app/assets/images/melb_boxplot.png';
+import wisdm_1600_x from '../app/assets/images/Wisdm/wisdm_1600_x.png';
+import wisdm_1600_y from '../app/assets/images/Wisdm/wisdm_1600_y.png';
+import wisdm_1600_z from '../app/assets/images/Wisdm/wisdm_1600_z.png';
+import Wisdm_1601_x from '../app/assets/images/Wisdm/Wisdm_1601_x.png';
+import Wisdm_1601_y from '../app/assets/images/Wisdm/Wisdm_1601_y.png';
+import Wisdm_1601_z from '../app/assets/images/Wisdm/Wisdm_1601_z.png';
+import Wisdm_linechart from '../app/assets/images/Wisdm/Wisdm_linechart.png';
+import Wisdm_boxplot from '../app/assets/images/Wisdm/Wisdm_boxplot.png';
+import roc_no_smote from '../app/assets/images/Wisdm/roc_no_smote.png';
+import report_no_smote from '../app/assets/images/Wisdm/report_no_smote.png';
+import cluster_no_pca from '../app/assets/images/Wisdm/cluster_no_pca.png';
+import pca from '../app/assets/images/Wisdm/pca.png';
+import melb_scatter from '../app/assets/images/melb/melb_scatter.png';
+import melb_hist from '../app/assets/images/melb/melb_hist.png';
+import melb_boxplot from '../app/assets/images/melb/melb_boxplot.png';
 
 
 //Defining props using arrays and exporting 
@@ -96,12 +96,12 @@ export const naturalEarth = [
     },
     {
       title: "ROC Curve",
-      src: ROC, // This should be your actual image import or path
+      src: roc_no_smote, // This should be your actual image import or path
       alt: "Receiver Operating Characteristic (ROC) Curve",
     },
     {
       title: "Clustering similar activities",
-      src: clustering, // This should be your actual image import or path
+      src: cluster_no_pca, // This should be your actual image import or path
       alt: "Clustering similar activities",
     },
     {

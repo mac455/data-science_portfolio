@@ -4,8 +4,8 @@ import Image, {StaticImageData} from 'next/image';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 
 export interface ModalSliderImgItem {
-    src: StaticImageData;
-    text: string;
+    src: StaticImageData | null;
+    text: string | null;
     alt: string;
     description: React.ReactNode;
 }
@@ -44,7 +44,8 @@ const ModalSlider: React.FC<ModalSliderProps> = ({ imagesArray, currentSlideInde
             <div className="relative flex flex-col  gap-5">
                 <h2 className="text-3xl text-center font-bold mb-4">{currentSlide.alt}</h2>
                 <div className='flex justify-center'>
-                    <Image
+                    {currentSlide.src && (
+                        <Image
                         className='mt-5'
                         src={currentSlide.src}
                         alt={currentSlide.alt}
@@ -52,6 +53,7 @@ const ModalSlider: React.FC<ModalSliderProps> = ({ imagesArray, currentSlideInde
                         height={400}
                         style={{ maxWidth: '100%', height: 'auto' }}
                     />
+                    )}
                 </div>
                 <div className="flex justify-between items-center mt-5">
                     <button

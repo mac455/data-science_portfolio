@@ -1,10 +1,14 @@
 'use client';
+import Link from 'next/link';
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-export default function ImageSlider({ items }) {
+
+
+export default function ImageSlider({ items, href }) {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
     const prevSlide = () => {
@@ -20,19 +24,22 @@ export default function ImageSlider({ items }) {
     };
 
     const currentSlide = items[currentSlideIndex];
+    
 
     return (
         <div className="relative flex flex-col mt-10 gap-5">
             <h2 className="text-3xl font-thin text-center">{currentSlide.title}</h2>
             <div className="flex justify-center">
-                <Image 
-                    className='mt-5 transform transition-transform duration-1000 hover:scale-110' // Reduce scale for better fit
-                    src={currentSlide.src}
-                    alt={currentSlide.alt}
-                    width={600}
-                    height={400} // Adjusted height for better aspect ratio
-                    style={{ maxWidth: '100%', height: 'auto' }} // Responsive image
-                />
+                <Link href={href}>
+                    <Image 
+                        className='mt-5 transform transition-transform duration-1000 hover:scale-110' // Reduce scale for better fit
+                        src={currentSlide.src}
+                        alt={currentSlide.alt}
+                        width={600}
+                        height={400} // Adjusted height for better aspect ratio
+                        style={{ maxWidth: '100%', height: 'auto' }} // Responsive image
+                    />
+                </Link>
             </div>
             <div className="flex justify-between items-center mt-5">
                 <button 

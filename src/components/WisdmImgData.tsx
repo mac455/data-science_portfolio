@@ -1,26 +1,28 @@
-import wisdm_1600_x from '../app/assets/images/wisdm_1600_x.png';
-import wisdm_1600_y from '../app/assets/images/wisdm_1600_y.png';
-import wisdm_1600_z from '../app/assets/images/wisdm_1600_z.png';
-import Wisdm_1601_x from '../app/assets/images/Wisdm_1601_x.png';
-import Wisdm_1601_y from '../app/assets/images/Wisdm_1601_y.png';
-import Wisdm_1601_z from '../app/assets/images/Wisdm_1601_z.png';
-import gyro_x_1600 from '../app/assets/images/gyro_x_1600.png';
-import gyro_y_1600 from '../app/assets/images/gyro_y_1600.png';
-import gyro_z_1600 from '../app/assets/images/gyro_z_1600.png';
-import gyro_x_1601 from '../app/assets/images/gyro_x_1601.png';
-import gyro_y_1601 from '../app/assets/images/gyro_y_1601.png';
-import gyro_z_1601 from '../app/assets/images/gyro_z_1601.png';
-import gyro_boxplot_1600 from '../app/assets/images/gyro_boxplot_1600.png';
-import gyro_boxplot_1601 from '../app/assets/images/gyro_boxplot_1601.png';
-import Wisdm_boxplot_1601 from '../app/assets/images/Wisdm_boxplot_1601.png';
-import Wisdm_linechart from '../app/assets/images/Wisdm_linechart.png';
-import Wisdm_boxplot from '../app/assets/images/Wisdm_boxplot.png';
-import ROC from '../app/assets/images/ROC.png';
-import report_no_smote from '../app/assets/images/report_no_smote.png';
-import clusters_no_pca from '../app/assets/images/clusters_no_pca.png';
-import cluster_no_pca from '../app/assets/images/cluster_no_pca.png';
-import pca from '../app/assets/images/pca.png';
-import pca_clusters from '../app/assets/images/pca_clusters.png';
+import wisdm_1600_x from '../app/assets/images/Wisdm/wisdm_1600_x.png';
+import wisdm_1600_y from '../app/assets/images/Wisdm/wisdm_1600_y.png';
+import wisdm_1600_z from '../app/assets/images/Wisdm/wisdm_1600_z.png';
+import Wisdm_1601_x from '../app/assets/images/Wisdm/Wisdm_1601_x.png';
+import Wisdm_1601_y from '../app/assets/images/Wisdm/Wisdm_1601_y.png';
+import Wisdm_1601_z from '../app/assets/images/Wisdm/Wisdm_1601_z.png';
+import gyro_x_1600 from '../app/assets/images/Wisdm/gyro_x_1600.png';
+import gyro_y_1600 from '../app/assets/images/Wisdm/gyro_y_1600.png';
+import gyro_z_1600 from '../app/assets/images/Wisdm/gyro_z_1600.png';
+import gyro_x_1601 from '../app/assets/images/Wisdm/gyro_x_1601.png';
+import gyro_y_1601 from '../app/assets/images/Wisdm/gyro_y_1601.png';
+import gyro_z_1601 from '../app/assets/images/Wisdm/gyro_z_1601.png';
+import gyro_boxplot_1600 from '../app/assets/images/Wisdm/gyro_boxplot_1600.png';
+import gyro_boxplot_1601 from '../app/assets/images/Wisdm/gyro_boxplot_1601.png';
+import Wisdm_boxplot_1601 from '../app/assets/images/Wisdm/Wisdm_boxplot_1601.png';
+import Wisdm_linechart from '../app/assets/images/Wisdm/Wisdm_linechart.png';
+import Wisdm_boxplot from '../app/assets/images/Wisdm/Wisdm_boxplot.png';
+import roc_no_smote from '../app/assets/images/Wisdm/roc_no_smote.png';
+import roc_smote from '../app/assets/images/roc_smote.png';
+import report_smote from '../app/assets/images/Wisdm/report_smote.png';
+import report_no_smote from '../app/assets/images/Wisdm/report_no_smote.png';
+import clusters_no_pca from '../app/assets/images/Wisdm/clusters_no_pca.png';
+import cluster_no_pca from '../app/assets/images/Wisdm/cluster_no_pca.png';
+import pca from '../app/assets/images/Wisdm/pca.png';
+import pca_clusters from '../app/assets/images/Wisdm/pca_clusters.png';
 import { ModalSliderImgItem } from '@/components/ModalSlider';
 import { ImageItem } from './ImageOpacity';
 
@@ -359,6 +361,116 @@ export const clusterAfterPCA:  ModalSliderImgItem[] = [
         </>
       )
 
-  }
+  },
+  {
+    text: 'References - Figures 18 - 21',
+    src: null,
+    alt: "References ",
+    description:(
+      <>
+      <p>
+      Ariza Colpas, Paola, et al. 
+      “Unsupervised Human Activity Recognition Using the Clustering Approach: A Review.” Sensors, vol. 20, no. 9, 9 May 2020, p. 2702, https://doi.org/10.3390/s20092702.
+       Accessed 25 Nov. 2021. <br/>
+       <br/>
+       Neira-Rodado, D., Nugent, C., Cleland, I., Velasquez, J. and Viloria, A. (2020). 
+       Evaluating the Impact of a Two-Stage Multivariate Data Cleansing Approach to Improve to the Performance of Machine Learning Classifiers: A Case Study in Human Activity Recognition. 
+       Sensors, 20(7), p.1858. 
+       doi:https://doi.org/10.3390/s20071858. <br/> 
+       <br/>
+       Tajunisha, and Saravanan. “An Efficient Method to Improve the Clustering Performance for High Dimensional Data by Principal Component Analysis and Modified K-Means.”
+        International Journal of Database Management Systems ( IJDMS ), vol. 3, no. 1, 2011, https://doi.org/10.5121/ijdms.2011.3113. 
+       Accessed 25 Apr. 2024. <br/>
+       <br/>
+       Zhang, Xiaoliang, et al.
+        “A Robust K-Means Clustering Algorithm Based on Observation Point Mechanism.” Complexity, vol. 2020, 30 Mar. 2020, pp. 1–11, downloads.hindawi.com/journals/complexity/2020/3650926.pdf, https://doi.org/10.1155/2020/3650926.
+      </p> 
+      </>
+    )
+
+}
   
+]
+
+
+export const classifierNoSmt:  ModalSliderImgItem[] = [
+  {
+      text: 'Figures 22 & 23 ',
+      src: report_no_smote,
+      alt: "Figure 22",
+      description:(
+        <>
+        <p className='font-opensans'>
+        Figures 13-16 (Boxplots) show distinct differences in movement patterns for non-hand-oriented activities. 
+         This suggests that sensor data can be used to classify activities. 
+         For example, walking or not walking.  
+         Several studies have achieved high accuracy (up to 91%) with Random Forest Classifiers for activity prediction (Nayak et al., 2022; Min et al., 2020). 
+         Hence, a classifier model was built with a RandomForest Classifier. <br/>
+         The classifier performed well at identifying non-walking activities (class 0), as evidenced by 84% precision and 89% recall. 
+         The F1 score (0.86) highlights a good balance between precision and recall in class 0.
+        The model struggles to correctly identify instances of walking (class 1), shown by recall: 48% and precision: 59%.  
+        The F1 score (0.53) suggests there is significant room for improvement between the balance of precision and recall in class 1.
+      The overall accuracy is high but this is misleading as support values indicate a class imbalance in favour of non-walking activities, significantly inflating accuracy. 
+
+         
+        </p>
+        </>
+      )
+  },
+  {
+      text: 'Figure 23',
+      src: roc_no_smote,
+      alt: "Figure 23",
+      description:(
+        <>
+        <p>
+          A common way to display the model performance is an ROC curve as shown above, However, as the dataset is imbalanced, the ROC is ill-suited to use as an evaluation metric (Saito and Rehmsmeier, 2015). 
+          Appropriate evaluation methods include recall, precision, and F1 score (Saito and Rehmsmeier, 2015).
+
+        </p>
+        </>
+      )
+
+  },
+]
+export const classifierWithSmt: ModalSliderImgItem[] =[
+     { text: 'Figure 24',
+      src: report_smote,
+      alt: "Figure 24",
+      description: ( 
+        <>
+        <p>
+        To address this, the Synthetic Minority Oversampling (SMOTE) technique was applied. 
+        Figure 24 displays evaluating metrics after applying SMOTE. 
+        SMOTE increased the precision (87%) at the cost of recall (80%) in class 0. 
+        The F1 score (0.83) slightly decreased in class 0.  
+        In class 1, the model improved in identifying true positives shown by  65% recall. 
+        However, there was a slight decrease in precision at 51%, indicating more false positives in classification. 
+        The improved F1 score (0.58) indicates there is a better balance between precision and recall.
+         Furthermore, it highlights the model is performing better in class 1. 
+         The accuracy achieved is significantly lower than the values published in research studies, at 76% compared to 91% by Nayak et al.,(2022). Nayak et al.,(2022) implemented cross-validation, providing a more robust method of model evaluation. 
+         Insights from cross-validation are very valuable for improving model performance (Bertolini et al., 2021). 
+        Unfortunately, Cross-validation proved to be too computationally intensive for my system.
+        </p>
+        </>
+
+      )
+     },
+     {
+      text: 'References',
+      src: null,
+      alt: "References",
+      description:(
+        <>
+        <p>
+        Bertolini, R., Finch, S.J. and Nehm, R.H. (2021). Enhancing data pipelines for forecasting student performance: integrating feature selection with cross-validation. International Journal of Educational Technology in Higher Education, 18(1). doi:https://doi.org/10.1186/s41239-021-00279-6.<br/>
+        <br/>Min, Y., Yin Htay, Y., Khin, K. and Oo (2020). Comparing the Performance of Machine Learning Algorithms for Human Activities Recognition using WISDM Dataset. International Journal of Computer.<br/>
+        <br/>Nayak, S., Panigrahi, C., Pati, B., Nanda, S. and Hsieh, M.-Y. (2022). Comparative analysis of HAR datasets using classification algorithms. Computer Science and Information Systems, 19(1), pp.47–63. doi:https://doi.org/10.2298/csis201221043n.<br/>
+        <br/>Saito, T. and Rehmsmeier, M. (2015). The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets. PLOS ONE, 10(3), p.e0118432. doi:https://doi.org/10.1371/journal.pone.0118432.
+        </p>
+        </>
+      )
+     }
+
+
 ]

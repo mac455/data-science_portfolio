@@ -1,10 +1,7 @@
 'use client'
-import React, { useState } from 'react';
-import ImageOpacityOpenClick from '@/components/OpenClick';
-import ModalSlider from '@/components/ModalSlider';
-import { subject_1600, subject_1601, gyroscope_1600, gyroscope_1601, boxplot_accel, boxplot_gyro, activities_LC_Imgitem, clusterBeforePCA, clusterAfterPCA} from '@/components/WisdmImgData'; // Array for subject_1600 images
+import React from 'react';
+import { subject_1600, subject_1601, gyroscope_1600, gyroscope_1601, boxplot_accel, boxplot_gyro, activities_LC_Imgitem, clusterBeforePCA, clusterAfterPCA, classifierNoSmt, classifierWithSmt} from '@/components/WisdmImgData'; // Array for subject_1600 images
 import BackButton from '@/components/BackButton';
-import { ModalSliderImgItem } from '@/components/ModalSlider';
 import ModalHandler from '@/components/ModalHandler';
 import ImageOpacityWithModal from '@/components/ImageOpacity';
 
@@ -19,7 +16,7 @@ const Wisdm = () => {
                         <BackButton />
                     </div>
                     <div className="md:ml-10 flex flex-col w-full md:w-2/3  mx-auto px-4 md:px-0">
-                    <hr className="bg-indigo-500 h-1 rounded-full mb-4 mx-auto w-full" />
+                   
                         <h1 className="inline-block text-3xl md:text-5xl text-center font-bold text-gray-900 tracking-tight p-4">
                             WISDM Dataset: Data Analysis and Visualisation
                         </h1>
@@ -57,6 +54,12 @@ const Wisdm = () => {
             {/* Results & Discussion */}
             <h1 className="text-2xl md:text-3xl text-center font-bold text-gray-900 tracking-tight p-8">Results & Discussion</h1>
             <p className="text-base md:text-xl text-center font-alegreya text-gray-700 leading-relaxed mb-6 px-4">Click on any picture for further analysis</p>
+            <a className="block mx-auto text-base w-1/6  font-alegreya text-gray-700 leading-relaxed mb-6 px-4 underline underline-offset-1 focus:text-purple-500 " 
+            href='https://github.com/mac455/wisdm-data-analysis'
+            target='_blank'
+            rel='noopener noreferrer'
+            > (Source code available here) 
+            </a>
 
             <div className='flex justify-center gap-10'>
                 {/* Subject 1600 - Accel - Linechart*/}
@@ -126,6 +129,17 @@ const Wisdm = () => {
                     <ModalHandler imagesArray={clusterAfterPCA} imageIndex={0} />
                 </div>
 
+            </div>
+
+            <div className='flex justify-center gap-10 mb-20'>
+                <div className='flex-col'>
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> Classifier before SMOTE</h3>
+                    <ModalHandler imagesArray={classifierNoSmt} imageIndex={0} />
+                </div>
+                <div className='flex-col'>
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> Classifier before SMOTE</h3>
+                    <ModalHandler imagesArray={classifierWithSmt} imageIndex={0} />
+                </div>
             </div>
         </div>
     );

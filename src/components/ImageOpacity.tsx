@@ -7,7 +7,7 @@ export interface ImageItem {
     src: StaticImageData;
     alt: string;
     text: string;
-    description: string | React.ReactNode;
+    description: string | React.ReactNode| null;
 }
 
 interface ImageProps {
@@ -35,7 +35,7 @@ const ImageOpacityWithModal: React.FC<ImageProps> = ({ images = [] }) => {
                 <div key={index} className='relative group bg-blue-950 rounded-md cursor-pointer' 
                 onClick={() => handleOpenClick (imgItem)}>
                     <Image
-                        className='transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-25 cursor-pointer'
+                        className='transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-25 cursor-pointer mx-auto my-auto rounded-md'
                         src={imgItem.src}
                         alt={imgItem.alt}
                         width={600}
@@ -59,7 +59,7 @@ const ImageOpacityWithModal: React.FC<ImageProps> = ({ images = [] }) => {
                         />
                         <p className="text-lg mb-6 text-center ">{selectedImage.description}</p>
                         <button
-                            className=" text-white font-semibold text-lg bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 py-3 px-6 rounded-full ml-auto mr-auto"
+                            className=" text-white font-semibold text-lg bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 py-3 px-6 w-full rounded-full"
                             onClick={handleCloseClick}
                         >
                             Close

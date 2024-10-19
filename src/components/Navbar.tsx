@@ -2,7 +2,9 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import '../app/globals.css';
+
 
 export default function Home() {
   // State to manage the mobile menu
@@ -15,14 +17,16 @@ export default function Home() {
   const closeMenu = () => {
     setMenuOpen(false);
   }
+  const pathname = usePathname();
+
   return (
     <div>
       {/* Navbar Section */}
       <div className="flex justify-between items-center bg-white h-24 fixed top-0 left-0 right-0 z-50 shadow-lg px-4 md:px-8">
         <div>
           <Link href="/">
-            <h1 className='ml-5 md:ml-20 font-inter font-bold text-3xl hover:text-blue-500'>Mcanthony Otuonye</h1>
-          </Link>
+            <h1 className= {`${pathname === '/' ? 'text-blue-500' : ''} ml-5 md:ml-20 font-inter font-bold text-3xl hover:text-blue-500`} >Mcanthony Otuonye</h1>
+          </Link> 
         </div>
         {/* Hamburger Icon for Mobile */}
         <div className="md:hidden flex items-center">
@@ -34,12 +38,25 @@ export default function Home() {
           
         </div>
         {/* Navigation Links */}
-        <ul className={` hidden md:flex space-x-8 font-opensans text-black font-bold text-2xl ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-          <Link href="/about"><li className="hover:text-blue-500">About Me</li></Link>
-          <Link href="/portfolio"><li className="hover:text-blue-500">Portfolio</li></Link>
-          <Link href="/cv"><li className="hover:text-blue-500">CV</li></Link>
-          <Link href="/contact"><li className="hover:text-blue-500">Contact</li></Link>
-        </ul>
+        <ul className={`hidden md:flex space-x-8 font-opensans text-black font-bold text-2xl ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+        <Link href="/about">
+          <li className={`${pathname === '/about' ? 'text-blue-500' : ''} hover:text-blue-500`}>About Me</li>
+        </Link>
+        <Link href="/projects">
+          <li className={`${pathname === '/projects' ? 'text-blue-500' : ''} hover:text-blue-500`}>Projects</li>
+        </Link>
+        <a href="/Mcanthony Otuonye CV_Tech - Data.pdf"
+         target="_blank"
+          rel="noopener noreferrer"
+          className={`${pathname === '/cv' ? 'text-blue-500' : ''} hover:text-blue-500`}
+          >
+
+          <li>CV</li>
+        </a>
+        <Link href="/contact">
+          <li className={`${pathname === '/contact' ? 'text-blue-500' : ''} hover:text-blue-500`}>Contact</li>
+        </Link>
+      </ul>
       </div>
 
       {/* Optional Mobile Menu Overlay */}
@@ -47,8 +64,11 @@ export default function Home() {
         <div className="md:hidden absolute top-24 left-0 right-0 bg-white shadow-lg z-40">
           <ul className=" fixed top-24 flex flex-col p-4 bg-white w-full">
             <Link href="/about" onClick={closeMenu}><li className="py-2 hover:text-blue-500">About Me</li></Link>
-            <Link href="/portfolio" onClick={closeMenu}><li className="py-2 hover:text-blue-500">Portfolio</li></Link>
-            <Link href="/cv" onClick={closeMenu}><li className="py-2 hover:text-blue-500">CV</li></Link>
+            <Link href="/projects" onClick={closeMenu}><li className="py-2 hover:text-blue-500">Projects</li></Link>
+            <a href="/Mcanthony Otuonye CV_Tech - Data.pdf"
+            target="_blank"
+            rel="noopener noreferrer" 
+            onClick={closeMenu}><li className="py-2 hover:text-blue-500">CV</li></a>
             <Link href="/contact" onClick={closeMenu}><li className="py-2 hover:text-blue-500">Contact</li></Link>
           </ul>
         </div>
