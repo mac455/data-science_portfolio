@@ -166,7 +166,7 @@ export const gyroscope_1601: ModalSliderImgItem[] = [
   {
     text: "Figure 10-12",
       src: gyro_x_1601,
-      alt: "Figure 7",
+      alt: "Figure 10",
       description:(
         <>
         <p className='font-opensans'>
@@ -243,7 +243,7 @@ export const boxplot_accel:  ModalSliderImgItem[] = [
     {
         text: 'Figures 14',
         src: Wisdm_boxplot_1601,
-        alt: "Figure 7",
+        alt: "Figure 14",
         description:'See Figure 4'
     }
     

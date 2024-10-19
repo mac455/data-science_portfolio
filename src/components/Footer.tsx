@@ -47,6 +47,14 @@ const Footer = () =>{
           </div>
         </div>
       </div>
+      <div>
+      <a className=" mt-10 block mx-auto text-base w-full text-center font-alegreya  leading-relaxed mb-6 px-4 underline underline-offset-1 focus:text-purple-500 " 
+            href='https://github.com/mac455/data-science_portfolio'
+            target='_blank'
+            rel='noopener noreferrer'
+            > (Source code for this website is available here) 
+            </a>
+      </div>
     </div>
   );
 

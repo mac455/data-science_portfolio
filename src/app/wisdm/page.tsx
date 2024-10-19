@@ -83,7 +83,7 @@ const Wisdm = () => {
                 </div>
                  {/* Subject 1601 - Gyro */}
                  <div className='flex-col'>
-                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4">  Gyroscope data for subject 1600</h3>
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4">  Gyroscope data for subject 1601</h3>
                     <ModalHandler imagesArray={gyroscope_1601} imageIndex={0} />
                 </div>
             </div>
