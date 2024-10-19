@@ -3,11 +3,21 @@ import Link from 'next/link';
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
+interface ImageItem {
+    title: string;
+    src: StaticImageData;
+    alt: string;
+}
 
+interface ImageSliderProps {
+    items: ImageItem[];
+    href: string; // Ensure href is a string type
+}
 
-export default function ImageSlider({ items, href }) {
+const ImageSlider: React.FC<ImageSliderProps> = ({ items, href }) => {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
     const prevSlide = () => {
@@ -69,3 +79,5 @@ export default function ImageSlider({ items, href }) {
         </div>
     );
 }
+
+export default ImageSlider
