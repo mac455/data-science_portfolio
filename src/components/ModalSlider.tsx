@@ -4,9 +4,9 @@ import Image, {StaticImageData} from 'next/image';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 
 export interface ModalSliderImgItem {
-    src: StaticImageData | null;
-    text: string | null;
-    alt: string;
+    src: StaticImageData
+    text: string ;
+    alt: string | null;
     description: React.ReactNode;
 }
 
@@ -48,7 +48,7 @@ const ModalSlider: React.FC<ModalSliderProps> = ({ imagesArray, currentSlideInde
                         <Image
                         className='mt-5'
                         src={currentSlide.src}
-                        alt={currentSlide.alt}
+                        alt={currentSlide.alt ?? ''}
                         width={800}
                         height={400}
                         style={{ maxWidth: '100%', height: 'auto' }}

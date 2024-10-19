@@ -5,6 +5,8 @@ import int_scatter from '../app/assets/images/melb/int_scatter.png'
 import int_hist from '../app/assets/images/melb/int_hist.png'
 import melb_hist from '../app/assets/images/melb/melb_hist.png'
 import distance_hist from '../app/assets/images/melb/distance_int.png'
+import references from '../app/assets/images/references.jpg'
+
 
 
 import { ModalSliderImgItem } from "./ModalSlider";
@@ -51,8 +53,8 @@ export const staticIntScatter:ModalSliderImgItem[] = [
 
     },
     {
-        text: null,
-        src: null,
+        text: 'references',
+        src: references,
         alt: 'References',
         description: (
             <>
@@ -107,8 +109,8 @@ export const staticIntBoxplot:ModalSliderImgItem[] = [
         )
     },
     {
-        text: null,
-        src: null,
+        text: 'References',
+        src: references,
         alt: 'References',
         description: (
             <>

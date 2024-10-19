@@ -24,6 +24,7 @@ import pca from '../app/assets/images/Wisdm/pca.png';
 import pca_clusters from '../app/assets/images/Wisdm/pca_clusters.png';
 import { ModalSliderImgItem } from '@/components/ModalSlider';
 import { ImageItem } from './ImageOpacity';
+import references from '../app/assets/images/references.jpg'
 
 
 export const subject_1600:  ModalSliderImgItem[] = [
@@ -363,7 +364,7 @@ export const clusterAfterPCA:  ModalSliderImgItem[] = [
   },
   {
     text: 'References - Figures 18 - 21',
-    src: null,
+    src: references,
     alt: "References ",
     description:(
       <>
@@ -457,7 +458,7 @@ export const classifierWithSmt: ModalSliderImgItem[] =[
      },
      {
       text: 'References',
-      src: null,
+      src: references,
       alt: "References",
       description:(
         <>

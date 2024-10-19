@@ -6,7 +6,7 @@ import Image, {StaticImageData} from 'next/image';
 interface ImageItem {
     src: StaticImageData
     text: string
-    alt: string
+    alt: string | null 
 }
 
 interface ImageProps {
@@ -22,7 +22,7 @@ const ImageOpacityOpenClick: React.FC<ImageProps> = ({ image, onClick }) => {
                 <Image
                     className='transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-25'
                     src={image.src}
-                    alt={image.alt}
+                    alt={image.alt ?? ''}
                     width={600}
                     height={600}
                     priority 
