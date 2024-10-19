@@ -27,7 +27,7 @@ const Gym = () => {
                     Project overview 
                 </h1>
                 <p className=" block mx-auto leading-5 w-2/3 text-lg md:text-xl font-alegreya text-gray-700  mb-6 px-4">
-                This website is my first attempt at creating a fully functional website using React. 
+                This is website is made using React + Vite. <br/>
                 I chose to create a platform for a new boxing gym, combining my passion for web development with my interest in the sport.
                 </p>
             </div>

@@ -156,9 +156,7 @@ const Projects = () => {
                     <h1 className='text-gray-800 text-3xl md:text-4xl font-bold text-center mb-4'>Boxing Gym</h1>
                     <hr className='bg-indigo-500 h-1 rounded-full mb-4 w-full' />
                     <p className='text-lg md:text-xl font-alegreya text-gray-700 leading-relaxed mb-6'>
-                    This website is my first attempt at creating a fully functional website using React. 
-                    I chose to build a website for a brand new boxing gym because I love the sport and a boxing gym would be something I would love to own.
-                    The site was built using React + Vite
+                    I decided to create a website for a boxing gym for fun in my spare time 
                     </p>
                    <Link href="/boxingGym">
                         <button className='flex justify-center text-white font-semibold text-lg md:text-xl bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 w-2/3 md:w-1/2 mx-auto py-3 rounded-full '>
