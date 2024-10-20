@@ -42,7 +42,7 @@ const Projects = () => {
                    <div className='flex justify-center text-white font-semibold text-lg md:text-xl bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 w-2/3 md:w-1/2 mx-auto py-3 rounded-full '>
                        <Link href='/wisdm'>
                             <button >
-                                Go to project 🚀
+                                Go to project 
                             </button>
                        </Link>
                    </div>
