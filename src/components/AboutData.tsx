@@ -21,8 +21,8 @@ export const MyDetails: AboutItem[] = [
                 <p>
                  I have worked on both personal and collaborative projects.
                  Data mining/visualization of several online datasets using Python, applying machine learning techniques such as clustering, classification, and regression. 
-                <br/>As part of a team, we built a Student-Tutor Management App (Django, PostgreSQL, Tailwind), a Boxing Gym website (React), a To-Do List app (React). 
-                These projects have helped me develop strong programming skills while honing key soft skills like teamwork, communication, organisation, and time management.
+                <br/> I've built websites in React, and Next.js (examples on projects page). <br/> As a part-team, we built a Student-Tutor Management App (Django, PostgreSQL, Tailwind). My role was backend development using Django and PostgreSQL, which was a steep but extremely rewarding learning curve.
+                <br/>These projects have helped me develop strong programming skills while honing key soft skills like teamwork, communication, organisation, and time management.
                 </p>
             </>
         )
