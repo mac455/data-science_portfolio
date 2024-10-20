@@ -96,7 +96,7 @@ const Wisdm = () => {
                 
                 {/* Boxplot - Gyro */}
                 <div className='flex-col'>
-                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> S1600 and S1600 Accelerometer Boxplots</h3>
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> S1600 and S1600 Gyroscope Boxplots</h3>
                     <ModalHandler imagesArray={boxplot_gyro} imageIndex={0} />
                 </div>
             </div>

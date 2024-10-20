@@ -70,7 +70,7 @@ const ModalSlider: React.FC<ModalSliderProps> = ({ imagesArray, currentSlideInde
                         <BsArrowRightCircleFill className='text-2xl text-white' />
                     </button>
                 </div>
-                <p className="text-lg mb-6 text-center">{currentSlide.description}</p>
+                <p className="text-lg mb-6 text-center font-opensans">{currentSlide.description}</p>
                 <button
                     className="text-white font-semibold text-lg bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 py-3 px-6 rounded-full"
                     onClick={onClose}

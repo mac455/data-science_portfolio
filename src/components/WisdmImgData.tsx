@@ -34,7 +34,7 @@ export const subject_1600:  ModalSliderImgItem[] = [
       alt: "Figure 1",
       description: (
         <>
-             <p className='font-opensans'>
+             <p >
             Figures 1-3  show accelerometer data for subject 1600 (S1600) as a line chart using the first 1000 rows.
              Subject 1600 shows regular fluctuations in acceleration across all visualisations, consistent with expectations.
              There is also consistent side–to–side movement shown by variability in the X-axis. 
@@ -51,7 +51,7 @@ export const subject_1600:  ModalSliderImgItem[] = [
         alt: "Figure 2",
         description: (
           <>
-            <p className='font-opensans'>
+            <p >
             The amplitude in the Y-axis indicates that S1600 was walking at a moderate pace. 
             Acceleration is regularly above 12m/s2 and only drops to -2.5 m/s2. 
             Large peaks or troughs suggest a quick change of pace. 
@@ -65,7 +65,7 @@ export const subject_1600:  ModalSliderImgItem[] = [
         alt: "Figure 3",
         description: (
           <>
-            <p className='font-opensans'>
+            <p >
             The Z-axis also shows consistent movement patterns with sporadic spikes. 
              It is difficult to dictate what the cause of the spikes without specific knowledge of how the activity was carried out.
              However, the pattern of movement provides useful insights into individual behaviour while completing the exercise.
@@ -82,7 +82,7 @@ export const subject_1601:  ModalSliderImgItem[] =[
       alt: "Figure 4",
       description: (
         <>
-        <p className='font-opensans'>
+        <p >
         Subject 1601 (S1601) shows similar variability for both x-axis and y-axis (Figures 4-6).
          Acceleration on the X-axis slows down over time, reducing lateral movement as time elapses.  
          This could be characteristic of the individual. 
@@ -96,7 +96,7 @@ export const subject_1601:  ModalSliderImgItem[] =[
       alt: "Figure 5",
       description: (
         <>
-        <p className='font-opensans'>
+        <p >
         Overall, S1601 had a consistent walking pattern, indicated by the density of the data points between 20m/s2 and 7.5 m/s2 on the Y-axis. 
         This shows that S1601 was walking quicker than S1600.
         </p>
@@ -109,7 +109,7 @@ export const subject_1601:  ModalSliderImgItem[] =[
       alt: "Figure 6",
       description:(
         <>
-        <p className='font-opensans'>
+        <p >
         S1600 maintained consistent pace. 
         </p>
         </>
@@ -124,7 +124,7 @@ export const gyroscope_1600: ModalSliderImgItem[] = [
       alt: "Figure 7",
       description:(
         <>
-        <p className='font-opensans'>
+        <p >
         Figures 7-9 display the phone gyroscope data for S1600, showing consistent angular rotation along the X, Y, and Z axes. 
         These patterns help identify behavioral trends during the activity.
         </p>
@@ -137,7 +137,7 @@ export const gyroscope_1600: ModalSliderImgItem[] = [
       alt: "Figure 8",
       description:(
         <>
-        <p className='font-opensans'>
+        <p >
         Consistent movement along Y-axis
         </p>
         </>
@@ -149,7 +149,7 @@ export const gyroscope_1600: ModalSliderImgItem[] = [
       alt: "Figure 9",
       description:(
         <>
-        <p className='font-opensans'>
+        <p >
         Figure 10 reveals significant angular movement along the Z-axis. The density of the data is the most significant of all three axes,
         However, the data is also consistent across the timespan, indicating this is a behavioral trait of S1600 rather than an abrupt and sudden twisting or turning.
         The phone may have been held in hand during walking and experinced substantial arm movement.
@@ -169,7 +169,7 @@ export const gyroscope_1601: ModalSliderImgItem[] = [
       alt: "Figure 10",
       description:(
         <>
-        <p className='font-opensans'>
+        <p >
         The X-axis shows consistent peaks and troughs, indicating periodic movements.
         The range of movement suggests S1601 was swaying from side to side or swingin their arms while walking. 
 
@@ -183,7 +183,7 @@ export const gyroscope_1601: ModalSliderImgItem[] = [
       alt: "Figure 11",
       description:(
         <>
-        <p className='font-opensans'>
+        <p >
         Y-axis follows a similar pattern, with sporadic spikes across the timespan. 
         This may be attributed to sudden change in direction or movement.
         </p>
@@ -196,7 +196,7 @@ export const gyroscope_1601: ModalSliderImgItem[] = [
       alt: "Figure 12",
       description:(
         <>
-        <p className='font-opensans'>
+        <p >
         The Z-axis data shows a regular oscillation pattern but with a relatively smaller range compared to the X and Y axes. Z-axis movement suggest turning or twisting of the body while walking.
         The lower range of movement means that there’s less pronounced rotation along this axis, but still consistent enough to suggest ongoing physical movement.
         </p>
@@ -214,26 +214,32 @@ export const boxplot_accel:  ModalSliderImgItem[] = [
         alt: "Figure 13",
         description:(
           <>
-          <p className='font-opensans'>
-          Figures 13 and 14 show that S1600 and S1601 exhibit very similar movement patterns in non-hand-oriented activities. <br/>
-          <span style={{fontWeight:'bold'}}>X-axis:</span> <br/> The x-axis for both subjects display a small range. 
-          This is expected as non-hand-oriented activities do not require much side movement. 
-          The median for most activities on the x-axis is near 0, suggesting little lateral motion. 
-          However, the outliers highlight moments of sudden lateral movement. <br/>
+          <p >
+         <br/>
+          <span style={{fontWeight:'bold'}}>X-axis:</span> 
+          <br/> 
+      
+          The X-axis shows limited lateral motion across most activities, with static activities like sitting and standing showing minimal movement, near zero median. 
+          Dynamic activities like jogging and kicking present higher variability, with broader IQRs and a significant number of outliers, reflecting unpredictable side-to-side movement. 
+          The negative outliers suggest sharp leftward movements, which are consistent with more physically demanding activities. 
+          Overall, lateral movement is controlled but exhibits sudden deviations, primarily during high-motion activities. <br/>
+          
+          <br/>
           <span style={{fontWeight:'bold'}}>Y-axis:</span> <br/>
-           The Y-axis shows the largest variability in acceleration, especially jogging. 
-           In jogging, the similar medians suggest both subjects are running at a similar pace. 
-           However, S1601 has a higher interquartile range. 
-           This means S1601 is running at a faster pace for a longer period. 
-           The outliers highlight a rapid change in acceleration. 
-           Both subjects display similar patterns in all other activities <br/>
-           <span style={{fontWeight:'bold'}}>Z-axis:</span> <br/> 
-           The z-axis shows a range of different distributions for both subjects. 
-           For some activities, these movements may be characteristic of the individual because a small range is expected for non-hand-oriented activities in the z-axis. 
-           This is because there is little or no up/down movement in these activities.  
-           The outliers point towards significant rapid up/down movement.
+          
+          <br/>
+          The Y-axis displays considerable variability, especially for jogging and kicking, which have large IQRs and frequent outliers, signifying strong forward-backward acceleration. 
+          The wider ranges indicate sustained acceleration during active movements, while static activities (e.g., sitting, standing) remain clustered around zero. 
+          Outliers, both positive and negative, suggest rapid changes in acceleration, reflecting shifts in speed or direction during motion-heavy activities.<br/>
 
-
+          <br/>
+          <span style={{fontWeight:'bold'}}>Z-axis:</span> 
+          <br/> 
+           
+           <br/>The Z-axis shows the most pronounced range of motion, especially during jogging and kicking. 
+           These activities have wide IQRs and numerous outliers, indicating significant vertical acceleration changes, typical of up-and-down movements like bouncing or impact during physical exertion. 
+           Activities like walking and stairs exhibit more controlled, consistent vertical motion, while sitting and standing stay near zero, reflecting near-constant vertical position. 
+           The outliers highlight moments of sharp vertical acceleration, possibly from jumps or abrupt movements.
 
 
           </p>
@@ -244,7 +250,41 @@ export const boxplot_accel:  ModalSliderImgItem[] = [
         text: 'Figures 14',
         src: Wisdm_boxplot_1601,
         alt: "Figure 14",
-        description:'See Figure 4'
+        description:(
+          <>
+            <p >
+
+            <br/>
+            <span style={{fontWeight:'bold'}}>X-axis:</span> 
+            <br/> 
+            Movement patterns in X-axis are very similar to S1600.
+            Limited lateral motion across most activities, with static activities like sitting and standing showing minimal movement. 
+            Dynamic activities display higher variability, with wider IQRs and more outliers. <br/>
+           
+            <br/>
+            <span style={{fontWeight:'bold'}}>Y-axis:</span>            
+            <br/>
+
+            <br/> The Y-axis shows the largest variability in acceleration, especially "Jogging". 
+            In "Jogging", the similar medians suggest both subjects are running at a similar pace. 
+            However, S1601 has a higher interquartile range, meaning S1601 has greater sustained acceleration. <br/>
+            <br/> The outliers highlight a rapid change in acceleration. 
+            Especially in "Kicking" and " Stairs". 
+            Outliers in "Kicking" are likely due to quick and sudden acceleration as physically intensive sport. 
+            However, the range in acceleration on the "Stairs" suggest inconsistent pacing and may be down to individual characteristics.
+            <br/>Both subjects display similar patterns in all other activities.<br/>
+            <br/>
+            <span style={{fontWeight:'bold'}}>Z-axis:</span> 
+            <br/> 
+
+           
+            <br/>Movement patterns in Z-axis are also very similar to S1600. Significant range of motion from jogging and kicking due to the nature of the excercise. 
+            IQR and outliers from these activities suggest quick changes in vertical motion. 
+            Static activities ("Sitting" and "Standing") stay near zero, reflecting near-constant vertical position. 
+
+            </p>
+          </>
+        )
     }
     
 ]
@@ -253,14 +293,34 @@ export const boxplot_gyro:  ModalSliderImgItem[] = [
   {
       text: 'Figures 15 & 16 ',
       src: gyro_boxplot_1600,
-      alt: "Figure 13",
+      alt: "Figure 15",
       description:(
         <>
-        <p className='font-opensans'>
-        ASK FOR ANALYSIS 
+        <p>
+              <span style={{fontWeight:'bold'}}>X-axis:</span> 
+              <br/>
 
+              <br/>Lateral motion is minimal across most activities, as seen by the narrow IQRs, especially for "Sitting," "Standing," and "Stairs," with medians near zero. 
+              "Walking" and "Jogging" exhibit slightly larger IQRs, indicating more side-to-side movement, while "Kicking" shows the widest range, suggesting unpredictable lateral shifts. 
+              <br/>The numerous outliers, particularly in "Jogging" and "Kicking," reflect sudden, sharp lateral motions, highlighting individual style or technique during these activities.<br/>
 
+              <br/>
+              <span style={{fontWeight:'bold'}}>Y-axis:</span> <br/>
+              <br/>
 
+              The y-axis shows the most variability in "Jogging," with a wide IQR, suggesting significant forward-backward movement.
+              The outliers in this activity highlight rapid changes in acceleration, likely due to inconsistent pacing. <br/>
+              <br/>Activities, "Walking" and "Kicking", also show relatively high variation, while static activities like "Sitting" and "Standing" exhibit little motion. 
+              The limited outliers in these static activities suggest minimal unintended movements, indicating individual behaviour in maintaining stillness.<br/>
+              
+              
+              <br/>
+              <span style={{fontWeight:'bold'}}>Z-axis:</span> 
+              <br/>
+              
+              <br/>Vertical movement is moderate in dynamic activities, with "Jogging" and "Kicking" showing the highest variability. 
+              The wide IQR for "Jogging" suggests significant vertical motion, possibly due to footfalls and jumps. 
+              For static activities, the z-axis shows near-zero motion, as expected, though some outliers exist in "Sitting" and "Standing," possibly due to small posture adjustments or fidgeting.
         </p>
         </>
       )
@@ -268,8 +328,37 @@ export const boxplot_gyro:  ModalSliderImgItem[] = [
   {
       text: 'Figure 16',
       src: gyro_boxplot_1601,
-      alt: "Figure 7",
-      description:'See Figure 4'
+      alt: "Figure 16",
+      description:(
+        <>
+        <p>
+          <span style={{fontWeight:'bold'}}>X-axis:</span> 
+          <br/>
+
+          <br/>S1601 displays similar lateral movement patterns to S1600, with little to no side-to-side motion for static activities like "Sitting" and "Standing." 
+          <br/>However, "Jogging" and "Kicking" show larger IQRs and more outliers, with "Kicking" again standing out for its high variability, indicating erratic lateral shifts.<br/>
+          
+          <br/>
+          <span style={{fontWeight:'bold'}}>Y-axis:</span> 
+          <br/>      
+          
+          <br/>The y-axis shows significant variability in "Jogging," with a wider IQR compared to S1600, suggesting more pronounced forward-backward movements. 
+          This could indicate a more inconsistent pace during jogging. 
+          "Kicking" also shows high variability, while static activities remain near-zero with few outliers, similar to S1600.
+          <br/> The greater number of outliers in "Jogging" reflects rapid changes in acceleration, suggesting S1601 may be running faster or with less control than S1600. <br/> 
+        
+          <br/>
+          <span style={{fontWeight:'bold'}}>Z-axis:</span>
+          <br/>     
+
+          <br/>Vertical motion is most apparent in "Jogging" and "Kicking," with S1601 showing a wider IQR in "Jogging" than S1600. 
+          This suggests S1601 experiences more uneven vertical motion, possibly due to variations in running or kicking style.
+           As expected, vertical motion is minimal in static activities, though a few outliers are present in "Sitting" and "Standing," indicating minor, possibly unintended movements.
+
+        </p>
+
+        </>
+      )
   }
   
 ]
@@ -281,12 +370,12 @@ export const activities_LC_Imgitem: ImageItem  [] = [
     alt: "Figure 17",
     description: (
       <>
-           <p className='font-opensans'>
-           Non-hand oriented activites were used as they show the best variability across the dataset. 
-           The peaks and troughs can be attributed to high and low activity counts, respectively. 
-           Activity counts for all activities drop significantly from around 00:00 to 05:00 which is expected as people would be sleeping during these hours. 
-           The sharp increase in activity counts around 06:00 – 07:00 shows a pattern of early morning exercise across all subjects. 
-           An increase in activities during the late evening may be individuals who prefer exercise at night
+           <p>
+           Non-hand-oriented activities were selected for analysis due to their high variability across the dataset. 
+           The observed peaks and troughs correspond to high and low activity counts, respectively. 
+           Notably, activity counts drop significantly from around 00:00 to 05:00, which is expected as individuals are typically sleeping during these hours. 
+           A sharp increase in activity counts between 06:00 and 07:00 indicates a pattern of early morning exercise among the subjects. 
+           Additionally, an increase in activities during the late evening suggests that some individuals prefer to exercise at night.
           </p>
 
       </>
@@ -302,7 +391,7 @@ export const clusterBeforePCA:  ModalSliderImgItem[] = [
       alt: "Figure 18",
       description:(
         <>
-        <p className='font-opensans'>
+        <p>
       I attempted to create 3 activity clusters according to the dataset description to use for visualisation purposes.
        K-means clustering is a commonly used model (Colpas et al., 2020). Rodado et al., (2020) mentioned combining sensor data captured at the same. 
        Hence, both accelerometer and gyroscope sensor data from S1600 were used to obtain 6-axis-related features. 
@@ -322,7 +411,7 @@ export const clusterBeforePCA:  ModalSliderImgItem[] = [
         Cluster 2 contained significantly fewer activities with significantly lower counts. 
         There is much overlap of activities between all clusters. 
         Activities were grouped according to similar acceleration/gyroscope patterns.
-         However, a majority of activities contain outliers(Figure 13-16). 
+         However, a majority of activities contain outliers (Figure 13-16). 
          The clustering model may have incorrectly grouped the activities as it is sensitive to outliers (Zhang et al.,2020). 
          K-Medians and DBSCAN model are more robust to outliers, but these were programmatically more difficult and memory-intensive models. 
         </p>
@@ -339,7 +428,7 @@ export const clusterAfterPCA:  ModalSliderImgItem[] = [
       alt: "Figure 20",
       description:(
         <>
-        <p className='font-opensans'>
+        <p>
         Tajunisha and Saravanan (2011) suggested the use of PCA to improve clustering performance. 
         PCA was applied as 100% of the variance across 6 features could be captured by 2 principal components.
         </p>
@@ -400,19 +489,16 @@ export const classifierNoSmt:  ModalSliderImgItem[] = [
       alt: "Figure 22",
       description:(
         <>
-        <p className='font-opensans'>
-        Figures 13-16 (Boxplots) show distinct differences in movement patterns for non-hand-oriented activities. 
-         This suggests that sensor data can be used to classify activities. 
-         For example, walking or not walking.  
-         Several studies have achieved high accuracy (up to 91%) with Random Forest Classifiers for activity prediction (Nayak et al., 2022; Min et al., 2020). 
-         Hence, a classifier model was built with a RandomForest Classifier. <br/>
-         The classifier performed well at identifying non-walking activities (class 0), as evidenced by 84% precision and 89% recall. 
-         The F1 score (0.86) highlights a good balance between precision and recall in class 0.
-        The model struggles to correctly identify instances of walking (class 1), shown by recall: 48% and precision: 59%.  
-        The F1 score (0.53) suggests there is significant room for improvement between the balance of precision and recall in class 1.
-      The overall accuracy is high but this is misleading as support values indicate a class imbalance in favour of non-walking activities, significantly inflating accuracy. 
-
-         
+        <p >
+                  
+            Figures 13-16 (Boxplots) highlight distinct movement patterns for non-hand-oriented activities, indicating that sensor data can effectively classify activities, such as distinguishing walking from non-walking. 
+            Studies have shown Random Forest Classifiers can achieve high accuracy (up to 91%) for activity prediction (Nayak et al., 2022; Min et al., 2020). 
+            Based on this, a Random Forest classifier was developed.<br/>
+            <br/>
+            The model performed well in identifying non-walking activities (class 0), with 84% precision and 89% recall, and an F1 score of 0.86, reflecting a strong balance between precision and recall. 
+            However, the model struggled to detect walking (class 1), with recall at 48% and precision at 59%, resulting in an F1 score of 0.53, indicating significant room for improvement.
+            While the overall accuracy appears high, the class imbalance towards non-walking activities inflates this figure, masking the model's poorer performance on walking.
+            
         </p>
         </>
       )
@@ -424,7 +510,8 @@ export const classifierNoSmt:  ModalSliderImgItem[] = [
       description:(
         <>
         <p>
-          A common way to display the model performance is an ROC curve as shown above, However, as the dataset is imbalanced, the ROC is ill-suited to use as an evaluation metric (Saito and Rehmsmeier, 2015). 
+          A common way to display the model performance is an ROC curve as shown above, 
+          However, as the dataset is imbalanced, the ROC is ill-suited to use as an evaluation metric (Saito and Rehmsmeier, 2015). 
           Appropriate evaluation methods include recall, precision, and F1 score (Saito and Rehmsmeier, 2015).
 
         </p>
@@ -440,17 +527,21 @@ export const classifierWithSmt: ModalSliderImgItem[] =[
       description: ( 
         <>
         <p>
-        To address this, the Synthetic Minority Oversampling (SMOTE) technique was applied. 
-        Figure 24 displays evaluating metrics after applying SMOTE. 
-        SMOTE increased the precision (87%) at the cost of recall (80%) in class 0. 
-        The F1 score (0.83) slightly decreased in class 0.  
-        In class 1, the model improved in identifying true positives shown by  65% recall. 
-        However, there was a slight decrease in precision at 51%, indicating more false positives in classification. 
-        The improved F1 score (0.58) indicates there is a better balance between precision and recall.
-         Furthermore, it highlights the model is performing better in class 1. 
-         The accuracy achieved is significantly lower than the values published in research studies, at 76% compared to 91% by Nayak et al.,(2022). Nayak et al.,(2022) implemented cross-validation, providing a more robust method of model evaluation. 
-         Insights from cross-validation are very valuable for improving model performance (Bertolini et al., 2021). 
-        Unfortunately, Cross-validation proved to be too computationally intensive for my system.
+        In class 0, SMOTE increased precision to 87%, but recall dropped to 80%, resulting in a slight decrease in the F1 score to 0.83. 
+        This indicates a trade-off, where the model became more conservative, reducing false positives but missing actual positives.<br/>
+        
+        <br/>Conversely, class 1 saw improved recall at 65%, highlighting the model's better identification of true positives, albeit with a precision decrease to 51%, leading to more false positives. 
+        The F1 score of 0.58 suggests a better balance between precision and recall, indicating improved performance in class 1 despite the trade-offs.<br/>
+        
+        <br/>Overall accuracy was 76%, significantly lower than Nayak et al. (2022), which reported 91% due to cross-validation. 
+        Nayak et al. employed cross-validation, which provides a more robust and reliable method for model evaluation by ensuring that performance metrics are not overly optimistic due to overfitting. 
+        The insights derived from cross-validation are invaluable for understanding model behavior and identifying areas for improvement (Bertolini et al., 2021). <br/>
+    
+        <br/>Unfortunately, the implementation of cross-validation was deemed too computationally intensive for my system, limiting my ability to achieve the same level of model robustness. 
+        Future work may benefit from exploring alternative techniques, such as stratified sampling or simpler validation methods, that can provide insights into model performance without the full overhead of cross-validation. 
+        
+        <br/>
+        <br/>Additionally, feature investigations to enhance model performance and achieve a more balanced classification across both classes
         </p>
         </>
 

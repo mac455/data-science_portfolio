@@ -5,6 +5,7 @@ import int_scatter from '../app/assets/images/melb/int_scatter.png'
 import int_hist from '../app/assets/images/melb/int_hist.png'
 import melb_hist from '../app/assets/images/melb/melb_hist.png'
 import distance_hist from '../app/assets/images/melb/distance_int.png'
+import melb_boxplot from '../app/assets/images/melb/melb_boxplot.png'
 import references from '../app/assets/images/references.jpg'
 
 
@@ -72,22 +73,6 @@ export const staticIntBoxplot:ModalSliderImgItem[] = [
     {
         text:'Static vs Interactive Boxplots',
         src: int_hist,
-        alt: 'Static boxplot',
-        description: (
-            <>
-            <p>
-            Box plots are highly effective for visualising data distribution (Hu, 2020), offering a clear summary of central tendencies and variability. 
-            They are particularly robust for skewed data and are excellent for detecting outliers (Hu et al., 2020). 
-            The static box plot highlights that houses tend to be the most expensive property type, while units are the least costly. Additionally, houses are the most prevalent type of property, further indicating their prominence in the Melbourne real estate market.
-            However, while static box plots are useful for summarising data, they have limitations. Key details like quartiles and medians can only be inferred from the scale, making it harder to extract precise information.
-
-            </p>
-            </>
-        )
-    },
-    {
-        text:'Static vs Interactive Boxplots',
-        src: int_hist,
         alt: 'Interactive boxplot',
         description: (
             <>
@@ -104,6 +89,22 @@ export const staticIntBoxplot:ModalSliderImgItem[] = [
              In a city like Melbourne, where property prices are influenced by various socioeconomic factors, interactive plots can provide critical insights into housing affordability and market trends. 
              They offer a dynamic way to explore how different variables, such as proximity to the city center, land size, or amenities affect price distributions across property types.
              This level of detail is crucial for understanding broader housing trends, offering policymakers and investors deeper insights into the Melbourne real estate market in 2016.
+            </p>
+            </>
+        )
+    },
+    {
+        text:'Static vs Interactive Boxplots',
+        src: melb_boxplot,
+        alt: 'Static boxplot',
+        description: (
+            <>
+            <p>
+            Box plots are highly effective for visualising data distribution (Hu, 2020), offering a clear summary of central tendencies and variability. 
+            They are particularly robust for skewed data and are excellent for detecting outliers (Hu et al., 2020). 
+            The static box plot highlights that houses tend to be the most expensive property type, while units are the least costly. Additionally, houses are the most prevalent type of property, further indicating their prominence in the Melbourne real estate market.
+            However, while static box plots are useful for summarising data, they have limitations. Key details like quartiles and medians can only be inferred from the scale, making it harder to extract precise information.
+
             </p>
             </>
         )
