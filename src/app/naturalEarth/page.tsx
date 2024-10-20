@@ -71,8 +71,8 @@ const Earth = () => {
                     />
                 </div >
             </div>
-            <div className='flex justify-center gap-10 mb-10'>
-                {/* GDP and GDP perc capita*/}
+            <div className='flex flex-col md:flex-row justify-center gap-10'>
+                {/* GDP and GDP per capita*/}
                 <div className='flex-col'>
                     <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4">GDP & GDP per capita analysis</h3>
                     <ModalHandler imagesArray={GDP} imageIndex={0} />
