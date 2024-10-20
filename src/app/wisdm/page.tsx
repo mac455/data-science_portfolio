@@ -1,6 +1,8 @@
 'use client'
 import React from 'react';
-import { subject_1600, subject_1601, gyroscope_1600, gyroscope_1601, boxplot_accel, boxplot_gyro, activities_LC_Imgitem, clusterBeforePCA, clusterAfterPCA, classifierNoSmt, classifierWithSmt} from '@/components/WisdmImgData'; // Array for subject_1600 images
+import { subject_1600, subject_1601, gyroscope_1600, gyroscope_1601, 
+         boxplot_accel, boxplot_gyro, activities_LC_Imgitem, clusterBeforePCA, 
+        clusterAfterPCA, classifierNoSmt, classifierWithSmt, finalThoughts} from '@/components/WisdmImgData'; // Array for subject_1600 images
 import BackButton from '@/components/BackButton';
 import ModalHandler from '@/components/ModalHandler';
 import ImageOpacityWithModal from '@/components/ImageOpacity';
@@ -96,15 +98,19 @@ const Wisdm = () => {
                 
                 {/* Boxplot - Gyro */}
                 <div className='flex-col'>
-                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> S1600 and S1600 Gyroscope Boxplots</h3>
+                    <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> S1600 and S1601 Gyroscope Boxplots</h3>
                     <ModalHandler imagesArray={boxplot_gyro} imageIndex={0} />
                 </div>
             </div>
-            <div className='flex justify-center gap-10'>
+            <div className='flex flex-col md:flex-row justify-center gap-10'>
                  {/* Activity Freq. Linechart*/}
                 <div className='flex flex-col'>
                      <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> Activity Count by Time of day for all 51 Subjects</h3>
                      <ImageOpacityWithModal images={activities_LC_Imgitem} />
+                </div>
+                <div className='flex flex-col '>
+                <h3 className="mt-10 text-xl md:text-2xl text-center font-bold text-gray-900 tracking-tight p-4"> Final thoughts</h3>
+                     <ImageOpacityWithModal images={finalThoughts} />
                 </div>
             </div>
 

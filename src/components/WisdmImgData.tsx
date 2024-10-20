@@ -25,6 +25,8 @@ import pca_clusters from '../app/assets/images/Wisdm/pca_clusters.png';
 import { ModalSliderImgItem } from '@/components/ModalSlider';
 import { ImageItem } from './ImageOpacity';
 import references from '../app/assets/images/references.jpg'
+import final_thoughts from'../app/assets/images/Wisdm/final_thoughts.png'
+
 
 
 export const subject_1600:  ModalSliderImgItem[] = [
@@ -564,4 +566,37 @@ export const classifierWithSmt: ModalSliderImgItem[] =[
      }
 
 
+]
+
+export const finalThoughts: ImageItem  [] = [
+  {
+    text: "Conclusions",
+    src:final_thoughts,
+    alt: "Conclusion",
+    description: (
+      <>
+           <p>
+           This report analyses the WISDM dataset using visualisation methods to identify useful trends for human activity recognition (HAR). 
+           A random forest classifier is applied to perform binary activity prediction. F1 score improved from 0.53 to 0.58 after applying SMOTE. 
+           This may be further improved by experimenting with other algorithms such as Gradient Boosting algorithm, but this experiment was limited by computational resources.<br/>
+           <br/>
+
+           The analysis in Figure 17 focused on non-hand-oriented activities, providing insights into the most common times individuals engage in various movements. 
+           This is particularly useful for examining behavioral patterns, which could have significant applications across industries. 
+           <br/>
+           <br/>
+           In healthcare, monitoring the movement of elderly or at-risk patients would enable proactive management of their activity levels, reducing the risk of over-exertion and improving overall health outcomes.
+           <br/>In industries such as manufacturing or construction, HAR can monitor workers' movements to prevent injuries by identifying unsafe or repetitive motions. 
+           This can help organisations design better workplace ergonomics and reduce work-related injuries.
+
+           <br/>
+           <br/> 
+           With greater computational ressources, future works will focus on multi-class classification and implementing more advanced validations methods to improve model's ability in activity prediction.
+           
+          </p>
+
+      </>
+
+    )
+  },
 ]
