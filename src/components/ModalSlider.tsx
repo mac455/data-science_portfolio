@@ -57,14 +57,14 @@ const ModalSlider: React.FC<ModalSliderProps> = ({ imagesArray, currentSlideInde
                 </div>
                 <div className="flex justify-between items-center mt-5">
                     <button
-                        className='flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300'
+                        className='flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-left from-blue-500 to-indigo-900 hover:bg-blue-700 transition duration-300'
                         onClick={prevSlide}
                     >
                         <BsArrowLeftCircleFill className='text-2xl text-white' />
                     </button>
 
                     <button
-                        className='flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300'
+                        className='flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-left from-blue-500 to-indigo-900 hover:bg-blue-700 transition duration-300'
                         onClick={nextSlide}
                     >
                         <BsArrowRightCircleFill className='text-2xl text-white' />

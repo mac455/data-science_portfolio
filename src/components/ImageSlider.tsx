@@ -53,13 +53,13 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items, href }) => {
             <div className="flex justify-between items-center mt-5">
                 <button 
                     onClick={prevSlide} 
-                    className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300"
+                    className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-left from-blue-500 to-indigo-900  hover:bg-blue-700 transition duration-300"
                 >
                     <BsArrowLeftCircleFill className="text-3xl text-white" />
                 </button>
                 <button 
                     onClick={nextSlide} 
-                    className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300"
+                    className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-left from-blue-500 to-indigo-900  hover:bg-blue-700 transition duration-300"
                 >
                     <BsArrowRightCircleFill className="text-3xl text-white" />
                 </button>
@@ -71,7 +71,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items, href }) => {
                         key={index}
                         onClick={() => setCurrentSlideIndex(index)}
                         className={`w-3 h-3 cursor-pointer rounded-full transition duration-300 ${
-                            currentSlideIndex === index ? 'bg-blue-600' : 'bg-gray-400'
+                            currentSlideIndex === index ? 'bg-gradient-to-left from-blue-500 to-indigo-900 ' : 'bg-gray-400'
                         }`}
                     ></div>
                 ))}
