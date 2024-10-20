@@ -43,7 +43,7 @@ const ImageOpacityWithModal: React.FC<ImageProps> = ({ images = [] }) => {
                         priority 
                     />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                        <p className="text-white font-bold text-2xl">{imgItem.text}</p>
+                        <p className=" text-white font-bold text-center text-base md:text-2xl">{imgItem.text}</p>
                     </div>
                 </div>
             ))}
