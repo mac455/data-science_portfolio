@@ -22,7 +22,7 @@ const Footer = () =>{
 
         {/* Social Media Section */}
         <div className="flex flex-col gap-5 items-center md:items-start">
-          <h2 className="pb-2 font-bold text-4xl">Social Media</h2>
+          <h2 className="pb-2 font-bold text-4xl">Social Links</h2>
           <div>
             <a
               className="flex gap-5 items-center hover:text-blue-500"

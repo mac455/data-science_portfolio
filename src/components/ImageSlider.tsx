@@ -71,7 +71,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items, href }) => {
                         key={index}
                         onClick={() => setCurrentSlideIndex(index)}
                         className={`w-3 h-3 cursor-pointer rounded-full transition duration-300 ${
-                            currentSlideIndex === index ? 'bg-gradient-to-left from-blue-500 to-indigo-900 ' : 'bg-gray-400'
+                            currentSlideIndex === index ? 'bg-blue-500' : 'bg-gray-400'
                         }`}
                     ></div>
                 ))}
