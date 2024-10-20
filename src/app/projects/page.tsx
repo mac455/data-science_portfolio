@@ -73,7 +73,7 @@ const Projects = () => {
                     </p>
                     <Link href="/melbHousing">
                         <button className='flex justify-center text-white font-semibold text-lg md:text-xl bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 w-2/3 md:w-1/2 mx-auto py-3 rounded-full'>
-                            Go to project 🚀
+                            Go to project 
                         </button>
                     </Link>
                 </div>
@@ -102,7 +102,7 @@ const Projects = () => {
                     </p>
                    <Link href="/djia">
                         <button className='flex justify-center text-white font-semibold text-lg md:text-xl bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 w-2/3 md:w-1/2 mx-auto py-3 rounded-full '>
-                            Go to project 🚀
+                            Go to project 
                         </button>
                    </Link>
                 </div>
@@ -132,7 +132,7 @@ const Projects = () => {
                     </p>
                     <Link href='/naturalEarth'>
                         <button className='flex justify-center text-white font-semibold text-lg md:text-xl bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 w-2/3 md:w-1/2 mx-auto py-3 rounded-full '>
-                            Go to project 🚀
+                            Go to project 
                         </button>
                     </Link>
                 </div>
@@ -160,7 +160,7 @@ const Projects = () => {
                     </p>
                    <Link href="/boxingGym">
                         <button className='flex justify-center text-white font-semibold text-lg md:text-xl bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 w-2/3 md:w-1/2 mx-auto py-3 rounded-full '>
-                            Go to project 🚀
+                            Go to project 
                         </button>
                    </Link>
                 </div>

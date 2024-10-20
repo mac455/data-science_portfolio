@@ -20,7 +20,7 @@ const contact =() =>{
             </div>
             <div>
                 <h1 className="mt-10 block mx-auto w-2/3 mb-10 text-xl md:text-4xl text-center text-gray-900 tracking-tight p-4"> Please don&apos;t hesitate to get in touch! <br/>
-                I&apos;m open to all opportunities and eager for a new challenge where I can learn new skills and grow  !😊<br/>
+                I&apos;m open to all opportunities and eager for a new challenge where I can learn new skills and grow  !<br/>
                 My details are available below. <br/>
                 Looking forward to hearing from you! 
                 </h1>
