@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
           <div className="flex gap-3 sm:gap-5 items-center">
             <FaEnvelope className="text-lg sm:text-xl text-white" />
-            <p className="text-base sm:text-lg">Mcanthonyotuonye@gmail.com</p>
+            <p className="text-base sm:text-lg">info.otuonm2@gmail.com</p>
           </div>
         </div>
 
