@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
@@ -33,19 +32,18 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items, href }) => {
     };
 
     const currentSlide = items[currentSlideIndex];
-    
 
     return (
-        <div className="relative flex flex-col mt-10 gap-5">
-            <h2 className="text-3xl font-thin text-center">{currentSlide.title}</h2>
+        <div className="relative flex flex-col mt-10 gap-5 px-4 xl:px-0">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-xl font-thin text-center">{currentSlide.title}</h2>
             <div className="flex justify-center">
                 <Link href={href}>
                     <Image 
-                        className='mt-5 transform transition-transform duration-1000 hover:scale-110' // Reduce scale for better fit
+                        className='mt-5 transform transition-transform duration-1000 hover:scale-110' 
                         src={currentSlide.src}
                         alt={currentSlide.alt}
                         width={600}
-                        height={400} // Adjusted height for better aspect ratio
+                        height={400}
                         style={{ maxWidth: '100%', height: 'auto' }} // Responsive image
                     />
                 </Link>
@@ -53,15 +51,15 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items, href }) => {
             <div className="flex justify-between items-center mt-5">
                 <button 
                     onClick={prevSlide} 
-                    className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-left from-blue-500 to-indigo-900  hover:bg-blue-700 transition duration-300"
+                    className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 xl:w-14 xl:h-14 rounded-full bg-gradient-to-left from-blue-500 to-indigo-900 hover:bg-blue-700 transition duration-300"
                 >
-                    <BsArrowLeftCircleFill className="text-3xl text-white" />
+                    <BsArrowLeftCircleFill className="text-2xl md:text-3xl xl:text-4xl text-white" />
                 </button>
                 <button 
                     onClick={nextSlide} 
-                    className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-left from-blue-500 to-indigo-900  hover:bg-blue-700 transition duration-300"
+                    className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 xl:w-14 xl:h-14 rounded-full bg-gradient-to-left from-blue-500 to-indigo-900 hover:bg-blue-700 transition duration-300"
                 >
-                    <BsArrowRightCircleFill className="text-3xl text-white" />
+                    <BsArrowRightCircleFill className="text-2xl md:text-3xl xl:text-4xl text-white" />
                 </button>
             </div>
             {/* Create blue active slide dots */}
@@ -80,4 +78,4 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items, href }) => {
     );
 }
 
-export default ImageSlider
+export default ImageSlider;

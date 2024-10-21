@@ -42,9 +42,11 @@ export default function Home() {
         <Link href="/about">
           <li className={`${pathname === '/about' ? 'text-blue-500' : ''} hover:text-blue-500`}>About Me</li>
         </Link>
+
         <Link href="/projects">
           <li className={`${pathname === '/projects' ? 'text-blue-500' : ''} hover:text-blue-500`}>Projects</li>
         </Link>
+        
         <a href="/Mcanthony Otuonye CV_Tech - Data.pdf"
          target="_blank"
           rel="noopener noreferrer"
