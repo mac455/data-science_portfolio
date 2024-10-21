@@ -29,9 +29,9 @@ const ContactForm: React.FC = () => {
                 setPhone('');
                 setMessage('');
             } else {
-                throw new Error('Something went wrong');
+                throw new Error('Something went wrong, Please try again');
             }
-        } catch (error) {
+        } catch{
             setStatus('Failed to send message. Please try again.');
         }
     };
