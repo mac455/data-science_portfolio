@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import ImageOpacityOpenClick from '@/components/OpenClick';
 import ModalSlider from '@/components/ModalSlider';
-import { subject_1600} from '@/components/WisdmImgData'; // Array for subject_1600 images
+import { subject_1600} from '@/components/WisdmImgData'; 
 import { ModalSliderImgItem } from '@/components/ModalSlider';
 
 interface ModalHandlerProps {

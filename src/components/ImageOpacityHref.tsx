@@ -19,7 +19,6 @@ const ImageOpacityWithModal: React.FC<ImageProps> = ({ images = [] }) => {
     const [selectedImage, setSelectedImage] = useState<ImageItem | null>(null); // State is initalised as null first and then will be updated with image item 
 
     const handleOpenClick = (imgItem: ImageItem) => {
-        console.log("Image clicked:", imgItem); // Test if working 
         setSelectedImage(imgItem); // Store the selected image
         setIsModalOpen(true);
     };

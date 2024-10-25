@@ -13,7 +13,7 @@ export interface ModalSliderImgItem {
 interface ModalSliderProps {
     imagesArray: ModalSliderImgItem[];
     currentSlideIndex: number; // Receive currentSlideIndex as prop
-    onClose: () => void; // onClose callback
+    onClose: () => void; // This an onClose callback 
 }
 
 const ModalSlider: React.FC<ModalSliderProps> = ({ imagesArray, currentSlideIndex, onClose }) => {
@@ -50,10 +50,7 @@ const ModalSlider: React.FC<ModalSliderProps> = ({ imagesArray, currentSlideInde
         <div className="fixed inset-0 bg-cyan-900 bg-opacity-50 flex items-center justify-center z-50 overflow-hidden">
             <div className="bg-white p-5 rounded-lg shadow-lg w-full max-w-4xl md:w-3/4 lg:w-1/2 overflow-y-auto max-h-[95vh]">
                 <div className="relative flex flex-col gap-5">
-                    {/* Slide Title */}
                     <h2 className="text-3xl text-center font-bold mb-4">{currentSlide.alt}</h2>
-
-                    {/* Image Section */}
                     <div className="flex justify-center">
                         {currentSlide.src && (
                             <Image

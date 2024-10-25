@@ -13,7 +13,7 @@ interface ImageItem {
 
 interface ImageSliderProps {
     items: ImageItem[];
-    href: string; // Ensure href is a string type
+    href: string; 
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ items, href }) => {
@@ -31,7 +31,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items, href }) => {
         );
     };
 
-    const currentSlide = items[currentSlideIndex];
+    const currentSlide = items[currentSlideIndex]; // Store the image at the specified index 
 
     return (
         <div className="relative flex flex-col mt-10 gap-5 px-4 xl:px-0">
@@ -44,7 +44,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items, href }) => {
                         alt={currentSlide.alt}
                         width={600}
                         height={400}
-                        style={{ maxWidth: '100%', height: 'auto' }} // Responsive image
+                        style={{ maxWidth: '100%', height: 'auto' }} 
                     />
                 </Link>
             </div>

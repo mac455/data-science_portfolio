@@ -47,7 +47,7 @@ export default function Home() {
           <li className={`${pathname === '/projects' ? 'text-blue-500' : ''} hover:text-blue-500`}>Projects</li>
         </Link>
         
-        <a href="/Mcanthony Otuonye CV_Tech - Data.pdf"
+        <a href="/Tech_CV_Data.pdf"
          target="_blank"
           rel="noopener noreferrer"
           className={`${pathname === '/cv' ? 'text-blue-500' : ''} hover:text-blue-500`}
@@ -61,13 +61,13 @@ export default function Home() {
       </ul>
       </div>
 
-      {/* Optional Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-24 left-0 right-0 bg-white shadow-lg z-40">
           <ul className=" fixed top-24 flex flex-col p-4 bg-white w-full">
             <Link href="/about" onClick={closeMenu}><li className="py-2 hover:text-blue-500">About Me</li></Link>
             <Link href="/projects" onClick={closeMenu}><li className="py-2 hover:text-blue-500">Projects</li></Link>
-            <a href="/Mcanthony Otuonye CV_Tech - Data.pdf"
+            <a href="/Tech_CV_Data.pdf"
             target="_blank"
             rel="noopener noreferrer" 
             onClick={closeMenu}><li className="py-2 hover:text-blue-500">CV</li></a>
