@@ -11,4 +11,5 @@ Projects Section: Highlights various data science projects with detailed descrip
 
 Contact Form: Allows visitors to reach out for collaboration or inquiries.
 
-Available for viewing [here!](https://data-science-portfolio-sigma.vercel.app/)
+## Deployment
+The project is deployed on Vercel and available for viewing [here!](https://data-science-portfolio-sigma.vercel.app/)
